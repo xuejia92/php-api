@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>赢牌换宝</title>
+
+<style>
+body{
+	margin:0 auto;
+    text-align:center;
+}
+.main{
+   margin:0 auto;
+   text-align:center;	
+   width:1000px;
+
+   
+}
+
+.item{
+   width:900px;
+   height:156px;
+   margin:0 auto;
+   text-align:center;
+   margin-top:15px;
+ }
+
+
+
+
+.item img{
+  float:left;margin-top:7px;
+}
+
+.item div{
+  float:left;margin-top:7px;
+}
+
+.item .middle{
+   width:850px;
+   height:156px;
+   background:url(http://www.dianlergame.com/showhand/web/activity/image/contentbg.png?1=1);
+ }
+
+
+.item div .content{
+  width:520px;
+  overflow：hidden;
+  text-align:left;
+  color:#488ec6;
+  font-size:15px;
+  margin-top:10px;
+  float:none;
+}
+
+.item a{
+  float:right;margin-top:40px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="main">		
+		<?php foreach($showAty as $key=>$value){?>
+				<div class="item">
+					<img style="width:23px;height:156px;" src="http://www.dianlergame.com/showhand/web/activity/image/contentbgL.png?"/>
+					<div class="middle">
+						<img style="width:128px;height:128px;margin-top:14px;" src="<?php echo $value['image'];?>"/>
+						<div style="margin-left:20px;text-align:left;">
+							<div class="content" style="margin-top:20px;font-size:20px;font-weight:bold;">
+								<?php echo $value['subject'];?>
+								<span style="padding-left:5px;font-size:15px;font-weight:normal;color:#d73d3d"><?php echo $value['time'];?></span>
+							</div>
+							<div class="content" >活动描述</div>
+							<div class="content" ><?php echo $value['desc'];?></div>
+						</div>
+						<a href="<?php echo ($value['url']).$paramString;?>">
+							<img src="http://www.dianlergame.com/showhand/web/activity/image/button.png"/>
+						</a>
+					</div>
+					<img style="width:23px;height:156px;" src="http://www.dianlergame.com/showhand/web/activity/image/contentbgR.png?"/>
+					<div style="clear:both;"></div>
+				</div>
+		<?php }?>
+		
+		<div style="clear:both;"></div>
+		
+</div>
+
+</body>
+</html>

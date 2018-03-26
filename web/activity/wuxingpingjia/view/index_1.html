@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no"/>
+<title>智取胜局 勇夺宝箱</title>
+
+<style>
+body{
+	margin:0 auto;
+    text-align:center;
+	background-color:#4a2a1e;
+}
+a{
+text-decoration:none;
+}
+.main{
+   margin:0 auto;
+   text-align:center;	
+   width:1280px;
+   height:800px;
+   position:relative;
+   background:url(http://user.dianler.com/web/activity/wuxingpingjia/image/wxpj_bg.jpg?1=1) no-repeat;
+   
+}
+
+.title_head{
+   margin:0 auto;
+   text-align:center;	
+   width:100%;
+   height:74px;
+   background:url(http://user.dianler.com/web/activity/image/head_ddz.png?2=1);
+}
+
+.jindu{
+	color:#ecac64;
+	line-height:59px;
+	font-size:40px;
+	width:158px;
+	height:59px;
+	text-align:center;
+	margin:0 auto;
+	margin-top:20px;
+}
+.buttonBX
+{
+	margin-left:20px;
+	float:left;
+	width:294px;
+	height:107px;
+	font-size:40px;
+	line-height:107px;
+	text-align:center;
+	color:#fff;
+}
+.kapian{
+	color:#ecac64;
+	width:189px;
+	height:66px;
+	line-height:66px;
+	font-size:25px;
+	float:right;
+	margin-top:8px;
+}
+
+
+/*消息框*/
+.child_div{
+  display:none;
+  position:absolute;
+  width:555px;
+  top:50%;
+  left:40%;
+  height:332px; 
+  z-index: 99;
+
+}
+.child_message_button{
+    position:absolute; 
+	font-size:25px;
+    color:#fff;
+	font-weight:bold;
+    line-height:70px;
+	text-decoration:none;
+	top:130px;
+    left:50px; 
+    z-index: 99;
+	width:184px;
+	height:70px;
+    background:url('http://user.dianler.com/web/activity/image/messagebutton.png') no-repeat;
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="main">
+<!--
+		<div class="title_head" style="z-index:99;position:absolute;left:0px;top:0px;">
+			<div style="width:1000px;margin:0 auto;">
+				<a href="javascript:;" id="changeButton_2" class="kapian" onclick="changeTable(2);"  style="background:url(http://user.dianler.com/web/activity/zhiqushengju/image/caidan_leave.png)">活动规则</a>
+				<a href="javascript:;" id="changeButton_3" class="kapian" onclick="changeTable(3);"  style="margin-right:10px;background:url(http://user.dianler.com/web/activity/zhiqushengju/image/caidan_leave.png)">领奖记录</a>
+				<a href="javascript:;" id="changeButton_1" class="kapian" onclick="changeTable(1);"  style="margin-right:10px;background:url(http://user.dianler.com/web/activity/zhiqushengju/image/caidan_on.png)">常胜将军</a>
+				
+			</div>
+		</div>	-->	
+		
+		<!--three item-->
+		<div id="table_1" style="width:912px;height:710px;position:absolute;top:10px;left:20%;z-index:1;background:url(http://user.dianler.com/web/activity/wuxingpingjia/image/wxpj_bgsh.png) no-repeat;">
+
+			<div style="clear:both;"></div>
+			<div style="width:560px;height:150px;color:#fff;font-size:30px;margin:0 auto;margin-top:320px;text-align:right;color:#ffbd80;">
+				<a href="https://itunes.apple.com/us/app/dian-le-suo-ha/id788485362?ls=1&mt=8" target="_blank"><img src="http://user.dianler.com/web/activity/wuxingpingjia/image/wxpj_button.png"/></a>
+			</div>
+			<div style="width:912px;height:30px;color:#fff;font-size:32px;margin:0 auto;margin-top:20px;text-align:left;color:#ffbd80;">
+				<div>活动时间:8月13日-8月23日</div>
+				<div>活动内容:凡在苹果商店对《点乐梭哈》给予5星好评，并在评论中留下用户ID(大厅--点击左上角头像--找到用户ID)，即可获得10万金币奖励。注意，1个ID只能获得1次奖励，活动奖励将在3个工作日内发放。</div>
+				<div>温馨提示:一定要在评论中留下用户ID哦^_^!</div>
+				
+			</div>
+		</div>
+		
+		<div id="table_2" style="width:912px;height:710px;display:none;position:absolute;z-index:1;top:10px;left:20%;background-color:red;">
+			活动规则活动规则活动规则 常胜将军
+		</div>
+		
+		<div id="table_3" style="width:912px;height:710px;display:none;position:absolute;z-index:1;top:10px;left:20%;background-color:red;">
+			领奖记录
+		</div>
+</div>
+
+<!--消息框-->
+	
+			<!--错误消息-->
+			<div class ='child_div' id="mess0" style="display:none;">
+		
+		        			
+				<div style='width:542px;height:95px;overflow:hidden;padding:0;margin:0;line-height:95px;background:url(http://user.dianler.com/web/activity/image/title.png);no-repeat'>
+					<span style='font-weight:bold;font-size:30px;color:#fff;'>温馨提示</span>
+				</div>
+				
+				<div style="width:542px;height:200px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:542px;height:200px;background:url(http://user.dianler.com/web/activity/image/bg.jpg);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-120px;left:500px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png); no-repeat;" onClick="message_close()" ></a>
+				
+					
+							<span  style='position:absolute;top:30px;left:20px;text-align:left; font-weight:bold;font-size:24px;color:#ffff00;'>您今日免费抽奖次数已经用完,接下来每次抽奖将花费1000金币，继续吗！</span>
+					
+							
+							<a href="#@" class='child_message_button' onClick="message_close()" >取消</a>
+							<a href="#@" class='child_message_button' style="left:310px;" onClick="message_close_two()" >确认</a>
+			
+						</div>
+					</div>
+					
+				</div>
+			
+				<div style='width:542px;height:26px;overflow:hidden;padding:0;margin:0;margin-top:-2px;background:url(http://user.dianler.com/web/activity/image/bottom.png) no-repeat;'>
+
+				</div>
+	
+				
+				
+			</div>
+			
+			<div class ='child_div' id="mess1" style="display:none;">
+		
+		        			
+				<div style='width:542px;height:95px;overflow:hidden;padding:0;margin:0;line-height:95px;background:url(http://user.dianler.com/web/activity/image/title.png);no-repeat'>
+					<span style='font-weight:bold;font-size:30px;color:#fff;'>温馨提示</span>
+				</div>
+				
+				<div style="width:542px;height:200px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:542px;height:200px;background:url(http://user.dianler.com/web/activity/image/bg.jpg);">
+						<div style="position:relative;margin:0 auto;">
+												
+							<span id="success" style='position:absolute;top:50px;left:125px; font-weight:bold;font-size:24px;color:#ffff00;'>恭喜您领取金币！</span>
+							<a href="#@" class='child_message_button' style="left:190px;" onClick="message_close()" >确认</a>
+			
+						</div>
+					</div>
+					
+				</div>
+			
+				<div style='width:542px;height:26px;overflow:hidden;padding:0;margin:0;margin-top:-2px;background:url(http://user.dianler.com/web/activity/image/bottom.png) no-repeat;'>
+
+				</div>
+	
+				
+				
+			</div>
+			
+			
+			<!--信息填写框10-->
+			<div class='child_div' id="mess2" style="display:none;">
+				<div style='width:542px;height:95px;overflow:hidden;padding:0;margin:0;line-height:95px;background:url(http://user.dianler.com/web/activity/image/title.png);no-repeat'>
+					<span style='font-weight:bold;font-size:30px;color:#fff;'>温馨提示</span>
+				</div>
+				
+				<div style="width:542px;height:200px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:542px;height:200px;background:url(http://user.dianler.com/web/activity/image/bg.jpg);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-120px;left:500px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png); no-repeat;" onClick="message_close()" ></a>
+				
+					
+							<span id="successPhone" style='position:absolute;top:50px;left:40px; font-weight:bold;font-size:24px;color:#ffff00;'>您的金币少于1000，不能继续使用金币抽奖。</span>
+					
+							<!--
+							<div style="position:absolute;top:50px;left:110px;width:350px;height:46px;background:url(http://cnjsmahjong.17c.cn/mahjong_weibo/application/mahjong/weibo/iphoneactivity/image/txt.png) no-repeat;">
+								<input id = "telphone" type='text' style="float:left;margin-left:10px;margin-top:5px;height:30px;width:320px;line-height:30px;color:#000;background-color:#fff;z-index:999;border:none"/>
+							</div>-->
+							
+							<a href="#@" class='child_message_button' onClick="message_close()" >取消</a>
+							<a href="#@" class='child_message_button' style="left:310px;" onClick="message_close()" >确认</a>
+			
+						</div>
+					</div>
+					
+				</div>
+				
+				<div style='width:542px;height:26px;overflow:hidden;padding:0;margin:0;margin-top:-2px;background:url(http://user.dianler.com/web/activity/image/bottom.png) no-repeat;'>
+
+				</div>
+			</div>
+
+
+<script style="text/javascript">
+	var message_now = 1;
+	var paramStringJ = "<?php echo $paramString; ?>";
+	function message_tab(tab){
+		var temp = tab;
+		var m = document.getElementById("mess"+temp);
+		var n = document.getElementById("mess"+message_now);
+		n.style.display = 'none';
+		m.style.display = 'block';
+		message_now = temp;
+	}
+	
+	function message_close(){
+		var n = document.getElementById("mess" + message_now); var n = document.getElementById("mess" + message_now);
+		//document.getElementById("yaoyao").innerHTML = "<img  id='yaoyaoImg' src='http://user.dianler.com/web/activity/yaoyaole2/image/yybutton.png?3=1' onclick='yaoyao();' />";
+		//document.getElementById("nowmoney").innerHTML="金币："+nowmoney;
+		n.style.display = 'none';
+	}
+	
+	var nowtableID = 1;
+	function changeTable(tableID){
+		document.getElementById("table_1").style.display = "none";
+		document.getElementById("table_2").style.display = "none";
+		document.getElementById("table_3").style.display = "none";
+		document.getElementById("table_"+tableID).style.display = "block";
+		
+		document.getElementById("changeButton_1").style.backgroundImage ="url(http://user.dianler.com/web/activity/zhiqushengju/image/caidan_leave.png)" ;
+		document.getElementById("changeButton_2").style.backgroundImage ="url(http://user.dianler.com/web/activity/zhiqushengju/image/caidan_leave.png)" ;
+		document.getElementById("changeButton_3").style.backgroundImage ="url(http://user.dianler.com/web/activity/zhiqushengju/image/caidan_leave.png)" ;
+		document.getElementById("changeButton_"+tableID).style.backgroundImage ="url(http://user.dianler.com/web/activity/zhiqushengju/image/caidan_on.png)" ;
+		nowtableID = tableID;
+	}
+	function changeMouseover(tableID)
+	{
+		document.getElementById("changeButton_"+tableID).style.backgroundImage ="url(http://user.dianler.com/web/activity/zhiqushengju/image/caidan_on.png)" ;
+	}
+	function changeMouseout(tableID)
+	{
+		if(tableID == nowtableID){
+			document.getElementById("changeButton_"+tableID).style.backgroundImage ="url(http://user.dianler.com/web/activity/zhiqushengju/image/caidan_on.png)" ;
+		}else{
+			document.getElementById("changeButton_"+tableID).style.backgroundImage ="url(http://user.dianler.com/web/activity/zhiqushengju/image/caidan_leave.png)" ;
+		}
+	}
+	
+	
+	function connectToPhp(){
+		var xmlhttp;
+		if(window.XMLHttpRequest){
+			try{
+				xmlhttp = new XMLHttpRequest();
+			}catch(e){
+				try{
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+				}catch(e){
+					try{
+						xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+					}catch(e){
+						xmlhttp = false;
+					}
+				}
+			}
+		}
+		
+		if(!xmlhttp){
+			alert('cannot create an XMLHTTP instance');
+		}
+	
+		xmlhttp.onreadystatechange=function(){
+			if (xmlhttp.readyState==4&& xmlhttp.status==200 ){
+
+				 var str = xmlhttp.responseText;
+                 
+				 if(str ==null|| str ==""){
+				    //message_tab(0);
+				    return;
+				 }else{
+				   alert(str);
+
+				  
+				   var obj = eval('('+str+')');
+				   //document.getElementById('labM').innerHTML = '<span>您当前积分为：'+obj.nowjifen+'</span>';
+				   
+				   if(obj.flag == 0){
+				      
+					  //alert("flag is zero please check your money");
+					  num1 = 5;
+					  if(obj.messid == 1){
+						message_tab(2);
+					  }else{
+						message_tab(0);
+					  }
+					  
+					  
+					  return;
+					}else{
+				      //message_close();
+				      //message_tab(10);
+					  //var style = "style='display:block;height:50px;width:108px;color:#fff;line-height:50px;font-weight:bold;text-decoration:none;background:url(http://user.dianler.com/web/activity/playCard/image/button-2.png) no-repeat;'";
+					  
+					  //var num = obj.steplength;
+					  //var backPrize = obj.prize;
+					  
+					  //alert(num);
+					  //document.getElementById('canLa').innerHTML = "幸运值："+obj.xingyunvalue;
+					  
+					  //vxinyunvalue = obj.xingyunvalue;
+                      //nowmoney  = obj.nowmoney;
+					  //oldmoney  = nowmoney;
+					  //jiangli = num+jiangli;
+					  //prize   = backPrize;
+					  //alert(jiangli);
+					  //start();
+					  //var button = "button"+num;
+					  document.getElementById("findbutton").innerHTML = "<a href='javascript:;' style='margin-left:20px;float:left;width:294px;height:107px;font-size:40px;line-height:107px;text-align:center;color:#fff;margin-left:110px;background:url(http://user.dianler.com/web/activity/zhiqushengju/image/button_3.png)'> 已领取 </a>";
+					  document.getElementById("success").innerHTML = "恭喜您从宝箱中暴出"+obj.money+"金币！";
+					  message_tab(1);
+					  
+					  return;
+					}
+				   
+				 }
+			}
+		};
+    
+		//根据message_now的值来判断
+    
+		//var require_jifen = 500;
+		//var money = 0;
+		//var telphone = document.getElementById('telphone').value;
+		var url = 'http://user.dianler.com/index.php?m=activity&p=dispath&fpath=zhiqushengju&action=startYo'+paramStringJ;
+		alert(url);
+		//alert(mid);
+		xmlhttp.open("GET", url, true);
+		xmlhttp.setRequestHeader("Content-Type","text/plain");
+		xmlhttp.send();
+	
+	}
+</script>
+</body>
+</html>

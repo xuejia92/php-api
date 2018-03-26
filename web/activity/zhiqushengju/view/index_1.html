@@ -1,0 +1,880 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no"/>
+<title>摇摇乐</title>
+
+<style>
+html,body{
+   margin:0 auto;
+   text-align : center;
+}
+.main{
+   width:100%;
+   padding-top:5px;
+   padding-bottom:60px;
+   height:430px;
+   margin:0 auto;
+   
+   background:url(http://user.dianler.com/web/activity/yaoyaole2/image/background.jpg) no-repeat;
+   overflow:hidden;
+  
+}
+
+#banner{
+   width:636px;
+   height:204px;
+   margin:0 auto;
+ }
+
+ 
+ 
+.piece
+{
+    width:91px;
+    height:91px;
+
+}
+.win_piece
+{
+    /*background:rgba(255, 0, 0, 0.4) none repeat scroll 0 0 !important; 
+    filter:alpha(opacity=40);
+    background-color:Red;
+    */
+	background:url(http://user.dianler.com/web/activity/yaoyaole2/image/choose.png?2=5) no-repeat;
+	/*opacity:0.8;*/
+	/*filter:alpha(opacity=80);*/ /* 针对 IE8 以及更早的版本 */
+	width:91px;
+    height:91px;
+  
+  
+}
+
+
+
+
+
+ 
+#content {
+ width:615px;
+ height:410px;
+ background:url(http://user.dianler.com/web/activity/yaoyaole2/image/cbackgroundnew.png?1=1) no-repeat;
+ margin:0 auto;
+ 
+ -moz-user-select:none;
+}
+
+
+
+
+
+
+
+.b_watermelons
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/388.png?2=3) no-repeat;
+}
+
+.b_bar
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/10huafei.png?2=1) no-repeat;
+}
+
+.b_3
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/688.png?2=1) no-repeat;
+}
+ 
+.b_4
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/3000.png?2=1) no-repeat;
+} 
+ 
+.b_5
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/1000.png?1=1) no-repeat;
+} 
+.b_6
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/100lequan.png?2=1) no-repeat;
+}
+
+.b_7
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/188.png?1=1) no-repeat;
+} 
+
+.b_8
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/266.png?1=1) no-repeat;
+}   
+
+.b_9
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/sanxings4.png?2=1) no-repeat;
+}
+.b_10
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/30huafei.png?2=1) no-repeat;
+}
+.b_11
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/labax2.png?2=1) no-repeat;
+}
+.b_12
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/8000.png?2=1) no-repeat;
+}
+.b_13
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/VIP.png?2=4) no-repeat;
+}
+.b_14
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/466.png?2=1) no-repeat;
+}
+.b_15
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/labax3.png?2=1) no-repeat;
+}
+.b_16
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole2/image/100000.png?2=1) no-repeat;
+}
+
+
+/*消息框*/
+.child_div{
+  display:none;
+  position:absolute;
+  width:555px;
+  top:40px;
+  left:50px;
+  height:332px; 
+  z-index: 99;
+
+}
+.child_message_button{
+    position:absolute; 
+	font-size:25px;
+    color:#fff;
+	font-weight:bold;
+    line-height:70px;
+	text-decoration:none;
+	top:130px;
+    left:50px; 
+    z-index: 99;
+	width:184px;
+	height:70px;
+    background:url('http://user.dianler.com/web/activity/image/messagebutton.png'); no-repeat;
+
+}
+</style>
+
+
+
+
+</head>
+<body>
+
+<div class="main">
+
+
+
+	<div id="demo" style="color:#f9b258;margin:0 auto;text-align:center;overflow:hidden;height:32px; line-height:32px;width:647px;white-space:nowrap; background:url('http://user.dianler.com/web/activity/yaoyaole2/image/alert.png'); no-repeat;">
+		<div id="demo1">
+		恭喜玩家豪**抽中100000金币！恭喜玩家云**抽中100乐券！恭喜玩家iPhone**抽中100000金币！恭喜玩家iPhone**抽中100000金币！恭喜玩家iPhone**抽中100000金币！恭喜玩家GT-I91**抽中100乐券！恭喜玩家MI**抽中10元话费！恭喜玩家峰**抽中100000金币！恭喜玩家ME**抽中10元话费！恭喜玩家HUAWEI C88**抽中30话费！恭喜玩家HTC Desi**抽中100乐券！恭喜玩家GT-I91**抽中100000金币！恭喜玩家HUAWEI C88**抽中10元话费！恭喜玩家赌**抽中10元话费！恭喜玩家HUAWEI C88**抽中100000金币！恭喜玩家HTC Desi**抽中100000金币！恭喜玩家MI**抽中100000金币！恭喜玩家HTC Desi**抽中100乐券！恭喜玩家iPhone**抽中10元话费！恭喜玩家a**抽中小米手机一部！恭喜玩家iPhone**抽中100000金币！
+			
+		</div>
+		<div id="demo2"></div>
+	</div>
+
+	<div id="content" style="position:relative;">
+		  
+
+					<!--上-->
+<div id='0-0' style='position:absolute;width:80px;height:82px;left:31px;top:46px;' class='piece b_watermelons'>
+</div>
+<div id='0-1' style='position:absolute;width:91px;height:91px;left:25px;top:40px;' class='piece'>
+</div>
+
+<div id='1-0' style='position:absolute;width:80px;height:82px;left:111px;top:46px;' class='piece b_bar'>
+</div>
+<div id='0-2' style='position:absolute;width:91px;height:91px;left:105px;top:40px;' class='piece'>
+</div>
+
+<div id='2-0' style='position:absolute;width:80px;height:82px;left:191px;top:46px;' class='piece b_3'>
+</div>
+<div id='0-3' style='position:absolute;width:91px;height:91px;left:185px;top:40px;' class='piece'>
+</div>
+
+<div id='3-0' style='position:absolute;width:80px;height:82px;left:271px;top:46px;' class='piece b_4'>
+</div>
+<div  id='0-4' style='position:absolute;width:91px;height:91px;left:265px;top:40px;' class='piece'>
+</div>
+
+<div id='4-0' style='position:absolute;width:80px;height:82px;left:351px;top:46px;' class='piece b_5'>
+</div>
+<div id='0-5' style='position:absolute;width:91px;height:91px;left:345px;top:40px;' class='piece'>
+</div>
+
+<div id='4-0' style='position:absolute;width:80px;height:82px;left:431px;top:46px;' class='piece b_6'>
+</div>
+<div id='0-6' style='position:absolute;width:91px;height:91px;left:425px;top:40px;' class='piece'>
+</div>
+
+
+<!--右边-->
+<div id='8-0' style='position:absolute;width:80px;height:82px;left:431px;top:127px;' class='piece b_7'>
+</div>
+<div  id='0-7' style='position:absolute;width:91px;height:91px;left:425px;top:121px;' class='piece'>
+</div>
+
+<div id='9-0' style='position:absolute;width:80px;height:82px;left:431px;top:207px;' class='piece b_8'>
+</div>
+<div  id='0-8' style='position:absolute;width:91px;height:91px;left:425px;top:201px;' class='piece'>
+</div>
+
+
+
+
+
+<!--下-->
+<div id='14-0' style='position:absolute;width:80px;height:82px;left:31px;top:287px;' class='piece b_14'>
+</div>
+<div id='0-14' style='position:absolute;width:91px;height:91px;left:25px;top:281px;' class='piece'>
+</div>
+
+<div id='15-0' style='position:absolute;width:80px;height:82px;left:111px;top:287px;' class='piece b_13'>
+</div>
+<div id='0-13' style='position:absolute;width:91px;height:91px;left:105px;top:281px;' class='piece'>
+</div>
+
+<div id='16-0' style='position:absolute;width:80px;height:82px;left:191px;top:287px;' class='piece b_12'>
+</div>
+<div id='0-12' style='position:absolute;width:91px;height:91px;left:185px;top:281px;' class='piece'>
+</div>
+
+<div id='17-0' style='position:absolute;width:80px;height:82px;left:271px;top:287px;' class='piece b_11'>
+</div>
+<div  id='0-11' style='position:absolute;width:91px;height:91px;left:265px;top:281px;' class='piece'>
+</div>
+
+<div id='18-0' style='position:absolute;width:80px;height:82px;left:351px;top:287px;' class='piece b_10'>
+</div>
+<div id='0-10' style='position:absolute;width:91px;height:91px;left:345px;top:281px;' class='piece'>
+</div>
+
+<div id='19-0' style='position:absolute;width:80px;height:82px;left:431px;top:287px;' class='piece b_9'>
+</div>
+<div id='0-9' style='position:absolute;width:91px;height:91px;left:425px;top:281px;' class='piece'>
+</div>
+
+<!--左边-->
+<div id='20-0' style='position:absolute;width:80px;height:82px;left:31px;top:127px;' class='piece b_16'>
+</div>
+<div  id='0-16' style='position:absolute;width:91px;height:91px;left:25px;top:121px;' class='piece'>
+</div>
+
+<div id='21-0' style='position:absolute;width:80px;height:82px;left:31px;top:207px;' class='piece b_15'>
+</div>
+<div  id='0-15' style='position:absolute;width:91px;height:91px;left:25px;top:201px;' class='piece'>
+</div>
+
+
+
+<div id="bigDeng" style='position:absolute;width:583px;height:409px;left:-20px;top:0px;font-weight:bold;color:#d49e3c;text-align:left;font-size:25px;background:url(http://user.dianler.com/web/activity/yaoyaole2/image/bigDeng1.png?5=5) no-repeat;'>
+	
+</div>
+
+<div id="smallDeng" style='position:absolute;width:337px;height:182px;left:102px;top:115px;font-weight:bold;color:#d49e3c;text-align:left;font-size:25px;background:url(http://user.dianler.com/web/activity/yaoyaole2/image/smallDeng1.png?5=5) no-repeat;'>
+	
+</div>
+		  
+<div id="yaoyao" style='position:absolute;width:165px;height:84px;left:188px;top:145px;'>
+	<img  id="yaoyaoImg" src='http://user.dianler.com/web/activity/yaoyaole2/image/yybutton.png?3=1' onclick="yaoyao();"/>
+</div>
+		   
+<div id="canLa" style='position:absolute;width:300px;height:82px;left:225px;top:230px;font-weight:bold;color:#fff;text-align:left;font-size:18px;'>
+	<?php if($canLa>0){?>
+	抽奖次数：<?php echo $canLa;?>
+	<?php }else{?>
+	幸运值：<?php echo $xingyunvalue;}?>
+</div>
+
+<div  style='position:absolute;width:500px;height:82px;left:0px;top:257px;font-weight:bold;color:#fff;text-align:left;'>
+	<span id="nowmoney" style="float:left;width:150px;margin-left:160px;">
+				金币：0</span>
+			<span style="float:left;width:150px;">乐券：<?php echo $userGameInfo['roll'];?></span>
+	<div style="clear:both;"></div>
+</div>
+
+<img  style='position:absolute;left:647px;top:0px;display:none' src="http://user.dianler.com/web/activity/yaoyaole2/image/handIcon.png?1=1" />
+
+<img id="xingyun0" style='position:absolute;left:556px;top:90px;' src="http://user.dianler.com/web/activity/yaoyaole2/image/bolizao.png?1=1" />
+<img id="xingyun1" style='position:absolute;left:556px;top:295px; display:none;' src="http://user.dianler.com/web/activity/yaoyaole2/image/x1.png?1=1" />
+<img id="xingyun2" style='position:absolute;left:556px;top:272px; display:none;' src="http://user.dianler.com/web/activity/yaoyaole2/image/x2.png?1=1" />
+<img id="xingyun3" style='position:absolute;left:556px;top:249px; display:none;' src="http://user.dianler.com/web/activity/yaoyaole2/image/x3.png?1=1" />
+<img id="xingyun4" style='position:absolute;left:556px;top:226px; display:none;' src="http://user.dianler.com/web/activity/yaoyaole2/image/x4.png?1=1" />
+<img id="xingyun5" style='position:absolute;left:556px;top:203px; display:none;' src="http://user.dianler.com/web/activity/yaoyaole2/image/x5.png?1=1" />
+<img id="xingyun6" style='position:absolute;left:556px;top:180px; display:none;' src="http://user.dianler.com/web/activity/yaoyaole2/image/x6.png?1=1" />
+<img id="xingyun7" style='position:absolute;left:556px;top:157px; display:none;' src="http://user.dianler.com/web/activity/yaoyaole2/image/x7.png?1=1" />
+<img id="xingyun8" style='position:absolute;left:556px;top:134px; display:none;' src="http://user.dianler.com/web/activity/yaoyaole2/image/x8.png?1=1" />
+<img id="xingyun9" style='position:absolute;left:556px;top:111px; display:none;' src="http://user.dianler.com/web/activity/yaoyaole2/image/x9.png?1=1" />
+<img id="xingyun10" style='position:absolute;left:556px;top:88px; display:none;' src="http://user.dianler.com/web/activity/yaoyaole2/image/x10.png?1=1" />
+	
+<div  style='position:absolute;width:100%;height:82px;top:440px;font-weight:bold;color:#d49e3c;text-align:left;display:none;'>
+	玩家连续登陆1天，获得1次抽奖机会。玩家连续登陆3天，获得2次抽奖机会。玩家连续登陆5天及以上，每天均可获得3次抽奖机会。
+</div>		   
+		   
+
+		   	<!--消息框-->
+	
+			<!--错误消息-->
+			<div class ='child_div' id="mess0">
+		
+		        			
+				<div style='width:542px;height:95px;overflow:hidden;padding:0;margin:0;line-height:95px;background:url(http://user.dianler.com/web/activity/image/title.png);no-repeat'>
+					<span style='font-weight:bold;font-size:30px;color:#fff;'>温馨提示</span>
+				</div>
+				
+				<div style="width:542px;height:200px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:542px;height:200px;background:url(http://user.dianler.com/web/activity/image/bg.jpg);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-120px;left:500px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png); no-repeat;" onClick="message_close()" ></a>
+				
+					
+							<span  style='position:absolute;top:30px;left:20px;text-align:left; font-weight:bold;font-size:24px;color:#ffff00;'>您今日免费抽奖次数已经用完,接下来每次抽奖将花费1000金币，继续吗！</span>
+					
+							
+							<a href="#@" class='child_message_button' onClick="message_close()" >取消</a>
+							<a href="#@" class='child_message_button' style="left:310px;" onClick="message_close_two()" >确认</a>
+			
+						</div>
+					</div>
+					
+				</div>
+			
+				<div style='width:542px;height:26px;overflow:hidden;padding:0;margin:0;margin-top:-2px;background:url(http://user.dianler.com/web/activity/image/bottom.png) no-repeat;'>
+
+				</div>
+	
+				
+				
+			</div>
+			
+			<div class ='child_div' id="mess1">
+		
+		        			
+				<div style='width:542px;height:95px;overflow:hidden;padding:0;margin:0;line-height:95px;background:url(http://user.dianler.com/web/activity/image/title.png);no-repeat'>
+					<span style='font-weight:bold;font-size:30px;color:#fff;'>温馨提示</span>
+				</div>
+				
+				<div style="width:542px;height:200px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:542px;height:200px;background:url(http://user.dianler.com/web/activity/image/bg.jpg);">
+						<div style="position:relative;margin:0 auto;">
+												
+							<span id="success" style='position:absolute;top:50px;left:125px; font-weight:bold;font-size:24px;color:#ffff00;'>恭喜您领取金币！</span>
+							<a href="#@" class='child_message_button' style="left:190px;" onClick="message_close()" >确认</a>
+			
+						</div>
+					</div>
+					
+				</div>
+			
+				<div style='width:542px;height:26px;overflow:hidden;padding:0;margin:0;margin-top:-2px;background:url(http://user.dianler.com/web/activity/image/bottom.png) no-repeat;'>
+
+				</div>
+	
+				
+				
+			</div>
+			
+			
+			<!--信息填写框10-->
+			<div class='child_div' id="mess2" >
+				<div style='width:542px;height:95px;overflow:hidden;padding:0;margin:0;line-height:95px;background:url(http://user.dianler.com/web/activity/image/title.png);no-repeat'>
+					<span style='font-weight:bold;font-size:30px;color:#fff;'>温馨提示</span>
+				</div>
+				
+				<div style="width:542px;height:200px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:542px;height:200px;background:url(http://user.dianler.com/web/activity/image/bg.jpg);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-120px;left:500px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png); no-repeat;" onClick="message_close()" ></a>
+				
+					
+							<span id="successPhone" style='position:absolute;top:50px;left:40px; font-weight:bold;font-size:24px;color:#ffff00;'>您的金币少于1000，不能继续使用金币抽奖。</span>
+					
+							<!--
+							<div style="position:absolute;top:50px;left:110px;width:350px;height:46px;background:url(http://cnjsmahjong.17c.cn/mahjong_weibo/application/mahjong/weibo/iphoneactivity/image/txt.png) no-repeat;">
+								<input id = "telphone" type='text' style="float:left;margin-left:10px;margin-top:5px;height:30px;width:320px;line-height:30px;color:#000;background-color:#fff;z-index:999;border:none"/>
+							</div>-->
+							
+							<a href="#@" class='child_message_button' onClick="message_close()" >取消</a>
+							<a href="#@" class='child_message_button' style="left:310px;" onClick="message_close()" >确认</a>
+			
+						</div>
+					</div>
+					
+				</div>
+				
+				<div style='width:542px;height:26px;overflow:hidden;padding:0;margin:0;margin-top:-2px;background:url(http://user.dianler.com/web/activity/image/bottom.png) no-repeat;'>
+
+				</div>
+			</div>
+		   
+	</div>		
+</div>
+<script style="text/javascript">
+var speed=40;//数值越大，速度越慢
+var demo2=document.getElementById("demo2");
+var demo1=document.getElementById("demo1");
+var demo=document.getElementById("demo");
+function MarqueeLeft(){
+if(demo2.offsetWidth-demo.scrollLeft<=-1280)
+demo.scrollLeft-=demo1.offsetWidth
+else{
+demo.scrollLeft++
+}
+}
+var MyMar=setInterval(MarqueeLeft,speed);
+demo.onmouseover=function() {clearInterval(MyMar);}
+demo.onmouseout=function() {MyMar=setInterval(MarqueeLeft,speed);}
+</script>
+<script type="text/javascript">
+var paramStringJ = "<?php echo $paramString; ?>";
+var oldmoney = "<?php echo $userGameInfo['money']; ?>";
+var nowmoney = "<?php echo $userGameInfo['money']; ?>";
+var vxinyunvalue 	 = "<?php echo $xingyunvalue;?>";
+var message_now = 1;
+
+
+function xingyunzhi(xinyunvalue)
+{
+	for(var j=1;j<=10;j++)
+	{
+		document.getElementById("xingyun"+j).style.display = "none";
+	}
+	for(var i = 1;i<=xinyunvalue;i++)
+	{
+		document.getElementById("xingyun"+i).style.display = 'block';
+	}
+	document.getElementById('canLa').innerHTML = "幸运值："+xinyunvalue;
+}
+
+function message_tab(tab){
+    var temp = tab;
+	var m = document.getElementById("mess"+temp);
+	var n = document.getElementById("mess"+message_now);
+	n.style.display = 'none';
+	m.style.display = 'block';
+	message_now = temp;
+}
+
+function message_close(){
+   var n = document.getElementById("mess" + message_now); var n = document.getElementById("mess" + message_now);
+   document.getElementById("yaoyao").innerHTML = "<img  id='yaoyaoImg' src='http://user.dianler.com/web/activity/yaoyaole2/image/yybutton.png?3=1' onclick='yaoyao();' />";
+   document.getElementById("nowmoney").innerHTML="金币："+nowmoney;
+   n.style.display = 'none';
+}
+
+
+
+</script>
+
+<script type="text/javascript">
+var step=1;
+var head=1;
+var title=1;
+var timeT;
+
+var jiangli = 33;
+var runSpeed = 150;
+var speed = 40;
+var prize = 0;
+var useMoney = 0;
+var num1 = 5;
+var laganSpeed = 100;
+var bg = 2;
+
+function message_close_two(){
+   var n = document.getElementById("mess" + message_now); var n = document.getElementById("mess" + message_now);
+   document.getElementById("yaoyao").innerHTML = "<img  id='yaoyaoImg' src='http://user.dianler.com/web/activity/yaoyaole2/image/yybutton_un.png?3=1' />";
+   document.getElementById("nowmoney").innerHTML="金币："+nowmoney;
+   n.style.display = 'none';
+   useMoney = 1;
+   connectToPhp();
+}
+
+function  yaoyao(){
+
+	document.getElementById("yaoyao").innerHTML = "<img  id='yaoyaoImg' src='http://user.dianler.com/web/activity/yaoyaole2/image/yybutton_un.png?3=1' />";
+	if(useMoney==1)
+	{
+		var tempNowmoney = nowmoney-1000;
+		document.getElementById("nowmoney").innerHTML="金币："+tempNowmoney;
+	}
+	connectToPhp();
+}
+
+function connectToPhp(){
+	var xmlhttp;
+	if(window.XMLHttpRequest){
+	   try{
+		 xmlhttp = new XMLHttpRequest();
+	   }catch(e){
+	     try{
+		   xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+	     }catch(e){
+		    try{
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}catch(e){
+			    xmlhttp = false;
+			}
+		 }
+	   }
+	}
+		
+    if(!xmlhttp){
+	   alert('cannot create an XMLHTTP instance');
+	}
+	
+	xmlhttp.onreadystatechange=function(){
+			if (xmlhttp.readyState==4&& xmlhttp.status==200 ){
+
+				 var str = xmlhttp.responseText;
+                 
+				 if(str ==null|| str ==""){
+				    //message_tab(0);
+				    return;
+				 }else{
+				   //alert(str);
+
+				  
+				   var obj = eval('('+str+')');
+				   //document.getElementById('labM').innerHTML = '<span>您当前积分为：'+obj.nowjifen+'</span>';
+				   
+				   if(obj.flag == 0){
+				      
+					  //alert("flag is zero please check your money");
+					  num1 = 5;
+					  if(obj.messid == 1){
+						message_tab(2);
+					  }else{
+						message_tab(0);
+					  }
+					  
+					  
+					  return;
+				   }else{
+				      //message_close();
+				      //message_tab(10);
+					  //var style = "style='display:block;height:50px;width:108px;color:#fff;line-height:50px;font-weight:bold;text-decoration:none;background:url(http://user.dianler.com/web/activity/playCard/image/button-2.png) no-repeat;'";
+					  
+					  var num = obj.steplength;
+					  var backPrize = obj.prize;
+					  
+					  //alert(num);
+					  //document.getElementById('canLa').innerHTML = "幸运值："+obj.xingyunvalue;
+					  
+					  vxinyunvalue = obj.xingyunvalue;
+                      nowmoney  = obj.nowmoney;
+					  oldmoney  = nowmoney;
+					  jiangli = num+jiangli;
+					  prize   = backPrize;
+					  //alert(jiangli);
+					  start();
+					  //var button = "button"+num;
+					  //document.getElementById(button).innerHTML = "<a  href='javascript:;'"+style+">已领取</a>";
+					  //document.getElementById("success").innerHTML = "恭喜您成功领取"+obj.money+"金币奖励！";
+					  //message_tab(1);
+					  
+					  return;
+				   }
+				   
+				 }
+			}
+    };
+    
+	//根据message_now的值来判断
+    
+	//var require_jifen = 500;
+	//var money = 0;
+	//var telphone = document.getElementById('telphone').value;
+	var url = 'http://user.dianler.com/index.php?m=activity&p=dispath&fpath=yaoyaole2&action=startYo&lhead='+head+"&useMoney="+useMoney+"&oldmoney="+oldmoney+paramStringJ;
+	//alert(url);
+	//alert(mid);
+	xmlhttp.open("GET", url, true);
+	xmlhttp.setRequestHeader("Content-Type","text/plain");
+	xmlhttp.send();
+	
+}
+
+function start(){
+	step++;
+	document.getElementById("0-"+title).className="piece";
+	document.getElementById("0-"+head).className="win_piece";
+	
+	if(bg>2){
+		bg =1;
+	}
+	document.getElementById("bigDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/bigDeng"+bg+".png?5=5) no-repeat";
+	document.getElementById("smallDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/smallDeng"+bg+".png?5=5) no-repeat";
+	timeT = setInterval(firstStep,400);
+}
+
+/*启动->跑过程*/
+function  firstStep(){
+	clearInterval(timeT);
+	step++;
+	head++;
+	bg++;
+	
+	if(head>16){
+		head=1;
+	}
+	
+	if(bg>2){
+		bg=1;
+	}
+	
+	document.getElementById("bigDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/bigDeng"+bg+".png?2=1) no-repeat";
+	document.getElementById("smallDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/smallDeng"+bg+".png?2=1) no-repeat";
+	
+	document.getElementById("0-"+head).className="win_piece";
+	document.getElementById("0-"+title).className="piece";
+	
+	title++;
+	if(head>16){
+		title=1;
+	}
+	
+	timeT = setInterval(secondStep,250);
+}
+function secondStep(){
+	if(step<=5){
+		step++;
+		head++;
+		bg++;
+		if(head>16){
+			head=1;
+		}
+		if(bg>2){
+			bg=1;
+		}
+		document.getElementById("0-"+head).className="win_piece";
+		document.getElementById("bigDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/bigDeng"+bg+".png?5=5) no-repeat";
+		document.getElementById("smallDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/smallDeng"+bg+".png?5=5) no-repeat";
+	}else{
+		clearInterval(timeT);
+		runStep();
+	}
+}
+
+function runStep(){
+	//每跑一次就加速一次
+	if(runSpeed>speed){
+		clearInterval(timeT);
+		runSpeed = runSpeed-10;
+		
+		if(head>16){
+			head=1;
+		}
+		if(title>16){
+			title=1;
+		}
+		if(bg>2){
+			bg=1;
+		}
+		document.getElementById("bigDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/bigDeng"+bg+".png?5=5) no-repeat";
+		document.getElementById("smallDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/smallDeng"+bg+".png?5=5) no-repeat";
+		document.getElementById("0-"+head).className="win_piece";
+		document.getElementById("0-"+title).className="piece";
+		
+		head++;
+		title++;
+		bg++;
+		timeT = setInterval(runStep,runSpeed);
+	}else{
+		clearInterval(timeT);
+		runCircle();
+	}
+}
+
+function runCircle(){
+	//每跑一次就加速一次
+	if(jiangli>0){
+		jiangli--;
+		
+		
+		if(head>16){
+			head=1;
+		}
+		if(title>16){
+			title=1;
+		}
+		if(bg>2){
+			bg=1;
+		}
+		document.getElementById("bigDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/bigDeng"+bg+".png?5=5) no-repeat";
+		document.getElementById("smallDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/smallDeng"+bg+".png?5=5) no-repeat";
+		document.getElementById("0-"+head).className="win_piece";
+		document.getElementById("0-"+title).className="piece";
+		head++;
+		title++;
+		bg++;
+		clearInterval(timeT);
+		timeT = setInterval(runCircle,runSpeed);
+	}else{
+		clearInterval(timeT);
+		stopFirst();
+	}
+}
+
+/*跑->停下过程*/
+function stopFirst(){
+	
+	//逐渐减速
+	if(runSpeed<=100){
+		//alert(runSpeed);
+		clearInterval(timeT);
+		
+		if(head>16){
+			head=1;
+		}	
+		if(title>16){
+			title=1;
+		}
+		if(bg>2){
+			bg=1;
+		}
+		document.getElementById("bigDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/bigDeng"+bg+".png?5=5) no-repeat";
+		document.getElementById("smallDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/smallDeng"+bg+".png?5=5) no-repeat";
+		document.getElementById("0-"+head).className="win_piece";
+		document.getElementById("0-"+title).className="piece";
+		head++;
+		title++;
+		bg++;
+		
+		runSpeed = runSpeed+10;
+		timeT = setInterval(stopFirst,runSpeed);
+		
+	}else if(runSpeed>100){
+		clearInterval(timeT);
+		timeT = setInterval(stopSecond,runSpeed);
+	}
+	
+	
+	
+}
+
+function stopSecond(){
+	
+	
+	if(head>16){
+		head=1;
+	}
+	if(title>16){
+		title=1;
+	}
+	if(bg>2){
+		bg=1;
+	}
+	//保持前进
+	document.getElementById("bigDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/bigDeng"+bg+".png?5=5) no-repeat";
+	document.getElementById("smallDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/smallDeng"+bg+".png?5=5) no-repeat";
+	document.getElementById("0-"+head).className="win_piece";
+	document.getElementById("0-"+title).className="piece";
+	head++;
+	title++;
+	bg++;
+	//尾部减小
+	if(title>16){
+		title = 1;
+	}
+	document.getElementById("0-"+title).className="piece";
+	title++;
+	//if(title != head-1){
+	//	document.getElementById("0-"+title).className="piece";
+	//}
+	
+	if(title == head){
+		clearInterval(timeT);
+		stopEnd();
+	}
+}
+
+function stopEnd(){
+    
+	if(step<=12){
+		clearInterval(timeT);
+		runSpeed=runSpeed+150;
+		timeT = setInterval(stopEnd,runSpeed);
+		
+		
+		if(head>16){
+			head=1;
+		}
+	
+		title=head;
+		title = title-1;
+		if(title<1){
+			title = 16;
+		}
+		if(bg>2){
+			bg=1;
+		}
+		document.getElementById("bigDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/bigDeng"+bg+".png?5=5) no-repeat";
+		document.getElementById("smallDeng").style.background="url(http://user.dianler.com/web/activity/yaoyaole2/image/smallDeng"+bg+".png?5=5) no-repeat";
+		document.getElementById("0-"+title).className="piece";
+		document.getElementById("0-"+head).className="win_piece";
+		head++;
+		bg++;
+		step++;
+		
+	}else{
+	    step=1;
+		if(head<=1){
+			head=16;
+		}else{
+			head=head-1;
+		}
+		title = head;
+
+		//alert(" head "+head+"  title "+title);
+		if(prize == 102){
+			document.getElementById("success").innerHTML = "^_^您获得2个喇叭!(需重新登陆)";
+		}else if(prize == 103){
+			document.getElementById("success").innerHTML = "^_^您获得3个喇叭!(需重新登陆)";
+		}else{
+			document.getElementById("success").innerHTML = "^_^您成功领取"+prize+"金币奖励！";
+		}
+		
+		message_tab(1);
+		xingyunzhi(vxinyunvalue);
+		//message_tab(2);
+		jiangli = 33;
+		runSpeed = 150;
+		speed = 40;
+		
+		//拉杆
+		num1 = 5;
+		laganSpeed = 100
+		clearInterval(timeT);
+	}
+	
+	
+}
+
+(function(){
+	document.getElementById("nowmoney").innerHTML="金币："+nowmoney;
+	xingyunzhi(vxinyunvalue);
+})();
+</script> 
+
+</body>
+</html>

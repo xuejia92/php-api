@@ -1,0 +1,757 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no"/>
+<title>赢牌换宝</title>
+
+<style>
+html,body{
+   margin:0 auto;
+   text-align : center;
+}
+.main{
+   width:100%;
+   padding-top:25px;
+   padding-bottom:60px;
+   height:400px;
+   margin:0 auto;
+   
+   background:url(http://user.dianler.com/web/activity/yaoyaole/image/background.jpg) no-repeat;
+   overflow:hidden;
+  
+}
+
+#banner{
+   width:636px;
+   height:204px;
+   margin:0 auto;
+ }
+
+ 
+ 
+.piece
+{
+    width:80px;
+    height:82px;
+
+}
+.win_piece
+{
+    /*background:rgba(255, 0, 0, 0.4) none repeat scroll 0 0 !important; 
+    filter:alpha(opacity=40);
+    background-color:Red;
+    */
+	background:url(http://user.dianler.com/web/activity/yaoyaole/image/onfouce.png?2=5) no-repeat;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* 针对 IE8 以及更早的版本 */
+	width:80px;
+    height:82px;
+  
+  
+}
+
+
+
+
+
+ 
+#content {
+ width:654px;
+ height:410px;
+ background:url(http://user.dianler.com/web/activity/yaoyaole/image/cbackground.png?2=1) no-repeat;
+ margin:0 auto;
+ 
+ -moz-user-select:none;
+}
+
+
+
+
+
+
+
+.b_watermelons
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/50.png?2=1) no-repeat;
+}
+
+.b_bar
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/huafei.png?2=1) no-repeat;
+}
+
+.b_3
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/100.png?2=1) no-repeat;
+}
+ 
+.b_4
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/10.png?2=1) no-repeat;
+} 
+ 
+.b_5
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/500.png?2=1) no-repeat;
+} 
+.b_6
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/1000.png?2=1) no-repeat;
+}
+
+.b_7
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/2000.png?2=1) no-repeat;
+} 
+
+.b_8
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/50.png?2=1) no-repeat;
+}   
+
+.b_9
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/iphone.png?2=1) no-repeat;
+}
+.b_10
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/100.png?2=1) no-repeat;
+}
+.b_11
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/10l.png?2=1) no-repeat;
+}
+.b_12
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/500.png?2=1) no-repeat;
+}
+.b_13
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/50.png?2=1) no-repeat;
+}
+.b_14
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/100.png?2=1) no-repeat;
+}
+.b_15
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/500.png?2=1) no-repeat;
+}
+.b_16
+{
+    background:url(http://user.dianler.com/web/activity/yaoyaole/image/50l.png?2=1) no-repeat;
+}
+
+
+/*消息框*/
+.child_div{
+  display:none;
+  position:absolute;
+  width:555px;
+  top:40px;
+  left:50px;
+  height:332px; 
+  z-index: 99;
+
+}
+.child_message_button{
+    position:absolute; 
+	font-size:25px;
+    color:#fff;
+	font-weight:bold;
+    line-height:70px;
+	text-decoration:none;
+	top:130px;
+    left:50px; 
+    z-index: 99;
+	width:184px;
+	height:70px;
+    background:url('http://user.dianler.com/web/activity/image/messagebutton.png'); no-repeat;
+
+}
+</style>
+
+
+
+
+</head>
+<body>
+
+<div class="main">
+	
+	<div id="content" style="position:relative;">
+		  
+
+					<!--上-->
+<div id='0-0' style='position:absolute;width:80px;height:82px;left:28px;top:28px;' class='piece b_watermelons'>
+</div>
+<div id='0-1' style='position:absolute;width:80px;height:82px;left:28px;top:28px;' class='piece'>
+</div>
+
+<div id='1-0' style='position:absolute;width:80px;height:82px;left:120px;top:28px;' class='piece b_bar'>
+</div>
+<div id='0-2' style='position:absolute;width:80px;height:82px;left:120px;top:28px;' class='piece'>
+</div>
+
+<div id='2-0' style='position:absolute;width:80px;height:82px;left:210px;top:28px;' class='piece b_3'>
+</div>
+<div id='0-3' style='position:absolute;width:80px;height:82px;left:210px;top:28px;' class='piece'>
+</div>
+
+<div id='3-0' style='position:absolute;width:80px;height:82px;left:302px;top:28px;' class='piece b_4'>
+</div>
+<div  id='0-4' style='position:absolute;width:80px;height:82px;left:302px;top:28px;' class='piece'>
+</div>
+
+<div id='4-0' style='position:absolute;width:80px;height:82px;left:394px;top:28px;' class='piece b_5'>
+</div>
+<div id='0-5' style='position:absolute;width:80px;height:82px;left:394px;top:28px;' class='piece'>
+</div>
+
+<div id='4-0' style='position:absolute;width:80px;height:82px;left:486px;top:28px;' class='piece b_6'>
+</div>
+<div id='0-6' style='position:absolute;width:80px;height:82px;left:486px;top:28px;' class='piece'>
+</div>
+
+
+<!--右边-->
+<div id='8-0' style='position:absolute;width:80px;height:82px;left:486px;top:119px;' class='piece b_7'>
+</div>
+<div  id='0-7' style='position:absolute;width:80px;height:82px;left:486px;top:119px;' class='piece'>
+</div>
+
+<div id='9-0' style='position:absolute;width:80px;height:82px;left:486px;top:209px;' class='piece b_8'>
+</div>
+<div  id='0-8' style='position:absolute;width:80px;height:82px;left:486px;top:209px;' class='piece'>
+</div>
+
+
+
+
+
+<!--下-->
+<div id='14-0' style='position:absolute;width:80px;height:82px;left:28px;top:299px;' class='piece b_14'>
+</div>
+<div id='0-14' style='position:absolute;width:80px;height:82px;left:28px;top:299px;' class='piece'>
+</div>
+
+<div id='15-0' style='position:absolute;width:80px;height:82px;left:120px;top:299px;' class='piece b_13'>
+</div>
+<div id='0-13' style='position:absolute;width:80px;height:82px;left:120px;top:299px;' class='piece'>
+</div>
+
+<div id='16-0' style='position:absolute;width:80px;height:82px;left:210px;top:299px;' class='piece b_12'>
+</div>
+<div id='0-12' style='position:absolute;width:80px;height:82px;left:210px;top:299px;' class='piece'>
+</div>
+
+<div id='17-0' style='position:absolute;width:80px;height:82px;left:302px;top:299px;' class='piece b_11'>
+</div>
+<div  id='0-11' style='position:absolute;width:80px;height:82px;left:302px;top:299px;' class='piece'>
+</div>
+
+<div id='18-0' style='position:absolute;width:80px;height:82px;left:394px;top:299px;' class='piece b_10'>
+</div>
+<div id='0-10' style='position:absolute;width:80px;height:82px;left:394px;top:299px;' class='piece'>
+</div>
+
+<div id='19-0' style='position:absolute;width:80px;height:82px;left:486px;top:299px;' class='piece b_9'>
+</div>
+<div id='0-9' style='position:absolute;width:80px;height:82px;left:486px;top:299px;' class='piece'>
+</div>
+
+<!--左边-->
+<div id='20-0' style='position:absolute;width:80px;height:82px;left:28px;top:119px;' class='piece b_16'>
+</div>
+<div  id='0-16' style='position:absolute;width:80px;height:82px;left:28px;top:119px;' class='piece'>
+</div>
+
+<div id='21-0' style='position:absolute;width:80px;height:82px;left:28px;top:209px;' class='piece b_15'>
+</div>
+<div  id='0-15' style='position:absolute;width:80px;height:82px;left:28px;top:209px;' class='piece'>
+</div>
+
+<div id="yaoyao" style='position:absolute;width:111px;height:415px;left:587px;top:50px;'>
+	<img  id="yaoyaoImg" src='http://user.dianler.com/web/activity/yaoyaole/image/1.png?1=1' onclick="yaoyao();"/>
+</div>
+		  
+		   
+<div id="canLa" style='position:absolute;width:300px;height:82px;left:220px;top:220px;font-weight:bold;color:#d49e3c;text-align:left;font-size:25px;'>
+	抽奖次数：<?php echo $canLa;?>
+</div>
+
+<div  style='position:absolute;width:700px;height:82px;left:0px;top:260px;font-weight:bold;color:#d49e3c;text-align:left;'>
+	<span id="nowmoney" style="float:left;width:180px;margin-left:160px;">
+				金币：0</span>
+			<span style="float:left;width:150px;">乐券：<?php echo $userGameInfo['roll'];?></span>
+	<div style="clear:both;"></div>
+</div>	
+<div  style='position:absolute;width:100%;height:82px;top:420px;font-weight:bold;color:#d49e3c;text-align:left;'>
+	玩家连续登陆1天，获得1次抽奖机会。玩家连续登陆3天，获得2次抽奖机会。玩家连续登陆5天及以上，每天均可获得3次抽奖机会。
+</div>		   
+		   
+
+		   	<!--消息框-->
+	
+			<!--错误消息-->
+			<div class ='child_div' id="mess0">
+		
+		        			
+				<div style='width:542px;height:95px;overflow:hidden;padding:0;margin:0;line-height:95px;background:url(http://user.dianler.com/web/activity/image/title.png);no-repeat'>
+					<span style='font-weight:bold;font-size:30px;color:#fff;'>温馨提示</span>
+				</div>
+				
+				<div style="width:542px;height:200px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:542px;height:200px;background:url(http://user.dianler.com/web/activity/image/bg.jpg);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-120px;left:500px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png); no-repeat;" onClick="message_close()" ></a>
+				
+					
+							<span  style='position:absolute;top:50px;left:130px; font-weight:bold;font-size:24px;color:#ffff00;'>您今日的抽奖次数已经用完！</span>
+					
+							
+							<a href="#@" class='child_message_button' onClick="message_close()" >取消</a>
+							<a href="#@" class='child_message_button' style="left:310px;" onClick="message_close()" >确认</a>
+			
+						</div>
+					</div>
+					
+				</div>
+			
+				<div style='width:542px;height:26px;overflow:hidden;padding:0;margin:0;margin-top:-2px;background:url(http://user.dianler.com/web/activity/image/bottom.png) no-repeat;'>
+
+				</div>
+	
+				
+				
+			</div>
+			
+			<div class ='child_div' id="mess1">
+		
+		        			
+				<div style='width:542px;height:95px;overflow:hidden;padding:0;margin:0;line-height:95px;background:url(http://user.dianler.com/web/activity/image/title.png);no-repeat'>
+					<span style='font-weight:bold;font-size:30px;color:#fff;'>温馨提示</span>
+				</div>
+				
+				<div style="width:542px;height:200px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:542px;height:200px;background:url(http://user.dianler.com/web/activity/image/bg.jpg);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-120px;left:500px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png); no-repeat;" onClick="message_close()" ></a>
+				
+					
+							<span id="success" style='position:absolute;top:50px;left:125px; font-weight:bold;font-size:24px;color:#ffff00;'>恭喜您领取金币！</span>
+					
+							
+							<a href="#@" class='child_message_button' onClick="message_close()" >取消</a>
+							<a href="#@" class='child_message_button' style="left:310px;" onClick="message_close()" >确认</a>
+			
+						</div>
+					</div>
+					
+				</div>
+			
+				<div style='width:542px;height:26px;overflow:hidden;padding:0;margin:0;margin-top:-2px;background:url(http://user.dianler.com/web/activity/image/bottom.png) no-repeat;'>
+
+				</div>
+	
+				
+				
+			</div>
+			
+			
+			<!--信息填写框10-->
+			<div class='child_div' id="mess2" >
+				<div style='width:542px;height:95px;overflow:hidden;padding:0;margin:0;line-height:95px;background:url(http://user.dianler.com/web/activity/image/title.png);no-repeat'>
+					<span style='font-weight:bold;font-size:30px;color:#fff;'>温馨提示</span>
+				</div>
+				
+				<div style="width:542px;height:200px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:542px;height:200px;background:url(http://user.dianler.com/web/activity/image/bg.jpg);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-120px;left:500px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png); no-repeat;" onClick="message_close()" ></a>
+				
+					
+							<span id="successPhone" style='position:absolute;top:0px;left:40px; font-weight:bold;font-size:24px;color:#ffff00;'>恭喜您抽到10元话费奖励，请填写您的号码。</span>
+					
+							<div style="position:absolute;top:50px;left:110px;width:350px;height:46px;background:url(http://cnjsmahjong.17c.cn/mahjong_weibo/application/mahjong/weibo/iphoneactivity/image/txt.png) no-repeat;">
+								<input id = "telphone" type='text' style="float:left;margin-left:10px;margin-top:5px;height:30px;width:320px;line-height:30px;color:#000;background-color:#fff;z-index:999;border:none"/>
+							</div>
+							
+							<a href="#@" class='child_message_button' onClick="message_close()" >取消</a>
+							<a href="#@" class='child_message_button' style="left:310px;" onClick="message_close()" >确认</a>
+			
+						</div>
+					</div>
+					
+				</div>
+				
+				<div style='width:542px;height:26px;overflow:hidden;padding:0;margin:0;margin-top:-2px;background:url(http://user.dianler.com/web/activity/image/bottom.png) no-repeat;'>
+
+				</div>
+			</div>
+		   
+	</div>		
+</div>
+
+<script type="text/javascript">
+var paramStringJ = "<?php echo $paramString; ?>";
+var oldmoney = "<?php echo $userGameInfo['money']; ?>";
+var nowmoney = "<?php echo $userGameInfo['money']; ?>";
+var message_now = 1;
+
+
+function message_tab(tab){
+    var temp = tab;
+	var m = document.getElementById("mess"+temp);
+	var n = document.getElementById("mess"+message_now);
+	n.style.display = 'none';
+	m.style.display = 'block';
+	message_now = temp;
+}
+
+function message_close(){
+   var n = document.getElementById("mess" + message_now); var n = document.getElementById("mess" + message_now);
+   document.getElementById("yaoyao").innerHTML = "<img  id='yaoyaoImg' src='http://user.dianler.com/web/activity/yaoyaole/image/1.png' onclick='yaoyao();' />";
+   document.getElementById("nowmoney").innerHTML="金币："+nowmoney;
+   n.style.display = 'none';
+}
+
+</script>
+
+<script type="text/javascript">
+var step=1;
+var head=1;
+var title=1;
+var timeT;
+var jiangli = 33;
+var runSpeed = 150;
+var speed = 40;
+var prize = 0;
+
+var num1 = 5;
+var laganSpeed = 100;
+function  yaoyao(){
+	
+	//alert(num);	
+	document.getElementById("yaoyao").innerHTML = "<img  id='yaoyaoImg' src='http://user.dianler.com/web/activity/yaoyaole/image/"+num1+".png'/>";
+	//alert(2);
+	tanhui();
+}
+
+function  tanhui(){
+	clearInterval(timeT);
+	
+	if(num1<1){
+		connectToPhp();
+	}else{
+		document.getElementById("yaoyao").innerHTML = "<img  id='yaoyaoImg' src='http://user.dianler.com/web/activity/yaoyaole/image/"+num1+".png'/>";
+		num1--;
+		timeT = setInterval(tanhui,laganSpeed);
+		laganSpeed -=20;
+	}
+		
+	
+
+}
+
+
+
+function connectToPhp(){
+	var xmlhttp;
+	if(window.XMLHttpRequest){
+	   try{
+		 xmlhttp = new XMLHttpRequest();
+	   }catch(e){
+	     try{
+		   xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+	     }catch(e){
+		    try{
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}catch(e){
+			    xmlhttp = false;
+			}
+		 }
+	   }
+	}
+		
+    if(!xmlhttp){
+	   alert('cannot create an XMLHTTP instance');
+	}
+	
+	xmlhttp.onreadystatechange=function(){
+			if (xmlhttp.readyState==4&& xmlhttp.status==200 ){
+
+				 var str = xmlhttp.responseText;
+                 
+				 if(str ==null|| str ==""){
+				    //message_tab(0);
+				    return;
+				 }else{
+				   //alert(str);
+
+				  
+				   var obj = eval('('+str+')');
+				   //document.getElementById('labM').innerHTML = '<span>您当前积分为：'+obj.nowjifen+'</span>';
+				   
+				   if(obj.flag == 0){
+				      
+					  //alert("flag is zero please check your money");
+					  num1 = 5;
+					  message_tab(0);
+					  return;
+				   }else{
+				      //message_close();
+				      //message_tab(10);
+					  //var style = "style='display:block;height:50px;width:108px;color:#fff;line-height:50px;font-weight:bold;text-decoration:none;background:url(http://user.dianler.com/web/activity/playCard/image/button-2.png) no-repeat;'";
+					  
+					  var num = obj.steplength;
+					  var backPrize = obj.prize;
+					  
+					  //alert(num);
+					  document.getElementById('canLa').innerHTML = "抽奖次数："+obj.canLa;
+                      nowmoney  = obj.nowmoney;
+					  oldmoney  = nowmoney;
+					  jiangli = num+jiangli;
+					  prize   = backPrize;
+					  //alert(jiangli);
+					  start();
+					  //var button = "button"+num;
+					  //document.getElementById(button).innerHTML = "<a  href='javascript:;'"+style+">已领取</a>";
+					  //document.getElementById("success").innerHTML = "恭喜您成功领取"+obj.money+"金币奖励！";
+					  //message_tab(1);
+					  
+					  return;
+				   }
+				   
+				 }
+			}
+    };
+    
+	//根据message_now的值来判断
+    
+	//var require_jifen = 500;
+	//var money = 0;
+	//var telphone = document.getElementById('telphone').value;
+	var url = 'http://user.dianler.com/index.php?m=activity&p=dispath&fpath=yaoyaole&action=startYo&lhead='+head+"&oldmoney="+oldmoney+paramStringJ;
+	//alert(url);
+	//alert(mid);
+	xmlhttp.open("GET", url, true);
+	xmlhttp.setRequestHeader("Content-Type","text/plain");
+	xmlhttp.send();
+	
+}
+
+function start(){
+	step++;
+	document.getElementById("0-"+title).className="piece";
+	document.getElementById("0-"+head).className="win_piece";
+	timeT = setInterval(firstStep,400);
+	
+}
+
+/*启动->跑过程*/
+function  firstStep(){
+	clearInterval(timeT);
+	step++;
+	head++;
+	
+	
+	if(head>16){
+		head=1;
+	}
+		
+	document.getElementById("0-"+head).className="win_piece";
+	document.getElementById("0-"+title).className="piece";
+	
+	title++;
+	if(head>16){
+		title=1;
+	}
+	
+	timeT = setInterval(secondStep,250);
+}
+function secondStep(){
+	if(step<=5){
+		step++;
+		head++;
+		if(head>16){
+			head=1;
+		}
+		document.getElementById("0-"+head).className="win_piece";
+	}else{
+		clearInterval(timeT);
+		runStep();
+	}
+}
+
+function runStep(){
+	//每跑一次就加速一次
+	if(runSpeed>speed){
+		clearInterval(timeT);
+		runSpeed = runSpeed-10;
+		
+		if(head>16){
+			head=1;
+		}
+		if(title>16){
+			title=1;
+		}
+		document.getElementById("0-"+head).className="win_piece";
+		document.getElementById("0-"+title).className="piece";
+		
+		head++;
+		title++;
+		timeT = setInterval(runStep,runSpeed);
+	}else{
+		clearInterval(timeT);
+		runCircle();
+	}
+}
+
+function runCircle(){
+	//每跑一次就加速一次
+	if(jiangli>0){
+		jiangli--;
+		
+		
+		if(head>16){
+			head=1;
+		}
+		if(title>16){
+			title=1;
+		}
+		document.getElementById("0-"+head).className="win_piece";
+		document.getElementById("0-"+title).className="piece";
+		head++;
+		title++;
+		clearInterval(timeT);
+		timeT = setInterval(runCircle,runSpeed);
+	}else{
+		clearInterval(timeT);
+		stopFirst();
+	}
+}
+
+/*跑->停下过程*/
+function stopFirst(){
+	
+	//逐渐减速
+	if(runSpeed<=100){
+		//alert(runSpeed);
+		clearInterval(timeT);
+		
+		if(head>16){
+			head=1;
+		}	
+		if(title>16){
+			title=1;
+		}
+	
+		document.getElementById("0-"+head).className="win_piece";
+		document.getElementById("0-"+title).className="piece";
+		head++;
+		title++;
+		
+		runSpeed = runSpeed+10;
+		timeT = setInterval(stopFirst,runSpeed);
+		
+	}else if(runSpeed>100){
+		clearInterval(timeT);
+		timeT = setInterval(stopSecond,runSpeed);
+	}
+	
+	
+	
+}
+
+function stopSecond(){
+	
+	
+	if(head>16){
+		head=1;
+	}
+	if(title>16){
+		title=1;
+	}
+	
+	//保持前进
+	document.getElementById("0-"+head).className="win_piece";
+	document.getElementById("0-"+title).className="piece";
+	head++;
+	title++;
+	
+	//尾部减小
+	if(title>16){
+		title = 1;
+	}
+	document.getElementById("0-"+title).className="piece";
+	title++;
+	//if(title != head-1){
+	//	document.getElementById("0-"+title).className="piece";
+	//}
+	
+	if(title == head){
+		clearInterval(timeT);
+		stopEnd();
+	}
+}
+
+function stopEnd(){
+    
+	if(step<=12){
+		clearInterval(timeT);
+		runSpeed=runSpeed+150;
+		timeT = setInterval(stopEnd,runSpeed);
+		
+		
+		if(head>16){
+			head=1;
+		}
+	
+		title=head;
+		title = title-1;
+		if(title<1){
+			title = 16;
+		}
+		document.getElementById("0-"+title).className="piece";
+		document.getElementById("0-"+head).className="win_piece";
+		head++;
+		step++;
+		
+	}else{
+	    step=1;
+		if(head<=1){
+			head=16;
+		}else{
+			head=head-1;
+		}
+		title = head;
+
+		//alert(" head "+head+"  title "+title);
+		document.getElementById("success").innerHTML = "恭喜您成功领取"+prize+"金币奖励！";
+		message_tab(1);
+		//message_tab(2);
+		jiangli = 33;
+		runSpeed = 150;
+		speed = 40;
+		
+		//拉杆
+		num1 = 5;
+		laganSpeed = 100
+		clearInterval(timeT);
+	}
+	
+	
+}
+
+(function(){
+	document.getElementById("nowmoney").innerHTML="金币："+nowmoney;
+})();
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,1056 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no"/>
+<title>国庆7天乐</title>
+
+<style>
+body{
+	margin:0 auto;
+    text-align:center;
+	background-color:#400f07;
+}
+a{
+text-decoration:none;
+}
+.main{
+   margin:0 auto;
+   text-align:center;	
+   width:1280px;
+   height:720px;
+   position:relative;
+   background:url(http://user.dianler.com/web/activity/guoqing/image/background2.jpg?5=5) no-repeat;
+   
+}
+.title_head{
+   margin:0 auto;
+   text-align:center;	
+   width:100%;
+   height:74px;
+   background:url(http://user.dianler.com/web/activity/image/head_ddz.png?2=1);
+}
+
+.jindu{
+	color:#ecac64;
+	line-height:59px;
+	font-size:40px;
+	width:158px;
+	height:59px;
+	text-align:center;
+	margin:0 auto;
+	margin-top:20px;
+}
+.buttonBX
+{
+	margin-left:20px;
+	float:left;
+	width:294px;
+	height:107px;
+	font-size:40px;
+	line-height:107px;
+	text-align:center;
+	color:#fff;
+}
+.kapian{
+	color:#ecac64;
+	width:189px;
+	height:66px;
+	line-height:66px;
+	font-size:25px;
+	float:right;
+	margin-top:8px;
+}
+
+
+/*消息框*/
+.child_div{
+  display:none;
+  position:absolute;
+  width:555px;
+  top:50%;
+  left:40%;
+  height:332px; 
+  z-index: 99;
+
+}
+.child_message_button{
+    position:absolute; 
+	font-size:25px;
+    color:#fff;
+	font-weight:bold;
+    line-height:70px;
+	text-decoration:none;
+	top:130px;
+    left:50px; 
+    z-index: 99;
+	width:184px;
+	height:70px;
+    background:url('http://user.dianler.com/web/activity/image/messagebutton.png') no-repeat;
+
+}
+.child_message_button1{
+    position:absolute; 
+	text-decoration:none;
+	top:330px;
+    left:50px; 
+    z-index: 99;
+	width:186px;
+	height:68px;
+    background:url('http://user.dianler.com/web/activity/image/messagebutton1.png') no-repeat;
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="main">
+
+		<div class="title_head" style="z-index:99;position:absolute;left:0px;top:0px;">
+			<div style="width:1000px;margin:0 auto;">
+				<a href="javascript:;" id="changeButton_2" class="kapian" onclick="changeTable(2);"  style="background:url(http://user.dianler.com/web/activity/guoqing/image/caidan_leave.png)">活动规则</a>
+				<!--<a href="javascript:;" id="changeButton_3" class="kapian" onclick="changeTable(3);"  style="margin-right:10px;background:url(http://user.dianler.com/web/activity/guoqing/image/caidan_leave.png)">领奖记录</a>-->
+				<a href="javascript:;" id="changeButton_1" class="kapian" onclick="changeTable(1);"  style="margin-right:10px;background:url(http://user.dianler.com/web/activity/guoqing/image/caidan_on.png)">快乐十一</a>
+				
+			</div>
+		</div>		
+		
+		<!--three item-->
+		<div id="table_1" style="position:relative; width:795px;height:678px;position:absolute;top:0px;left:20%;z-index:1;">
+
+			
+
+			<img  src="http://user.dianler.com/web/activity/guoqing/image/landcardman.png" style="position:absolute;top:235px;left:-50px;width:324px;height:433px;"/>
+
+			<div style="position:relative; width:566px;height:182px;margin:0 auto;margin-top:65px;background:url(http://user.dianler.com/web/activity/guoqing/image/midbar.png);">
+			
+			</div>
+			
+			<div style="position:relative; width:452px;height:346px;margin-left:270px;margin-top:50px;background:url(http://user.dianler.com/web/activity/guoqing/image/processbg.png);">
+				
+				<div id="mtool">
+					<div id="process">
+					<?php if($hadnum == 1){?>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:20px;width:188px;height:21px;"/>
+					<?php }else if($hadnum == 2){ ?>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:20px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:250px;width:188px;height:21px;"/>
+					
+					<?php }else if($hadnum == 3){ ?>
+					
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:20px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:250px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process2.png" style="position:absolute;top:35px;left:425px;width:21px;height:144px;"/>
+					
+					<?php }else if($hadnum == 4){ ?>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:20px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:250px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process2.png" style="position:absolute;top:35px;left:425px;width:21px;height:144px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process2.png" style="position:absolute;top:165px;left:425px;width:21px;height:144px;"/>
+					
+					<?php }else if($hadnum == 5){ ?>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:20px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:250px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process2.png" style="position:absolute;top:35px;left:425px;width:21px;height:144px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process2.png" style="position:absolute;top:165px;left:425px;width:21px;height:144px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:320px;left:250px;width:188px;height:21px;"/>
+					<?php }else if($hadnum == 6){ ?>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:20px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:250px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process2.png" style="position:absolute;top:35px;left:425px;width:21px;height:144px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process2.png" style="position:absolute;top:165px;left:425px;width:21px;height:144px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:320px;left:250px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:320px;left:20px;width:188px;height:21px;"/>
+					
+					<?php }else if($hadnum == 7){ ?>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:20px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:5px;left:250px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process2.png" style="position:absolute;top:35px;left:425px;width:21px;height:144px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process2.png" style="position:absolute;top:165px;left:425px;width:21px;height:144px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:320px;left:250px;width:188px;height:21px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/process1.png" style="position:absolute;top:320px;left:20px;width:188px;height:21px;"/>
+					
+					<?php } ?>
+					</div>
+					
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/txt.png" style="position:absolute;top:100px;left:-40px;width:479px;height:146px;"/>
+					
+					<!--宝箱1-->
+					<img id="day1" onclick="connectToPhp(1);" src="http://user.dianler.com/web/activity/guoqing/image/box1_<?php echo $day1Status;?>.png?1=1" style="position:absolute;top:-80px;left:-20px;width:167px;height:147px;"/>
+					<!--宝箱2-->
+					<img id="day2" onclick="connectToPhp(2);" src="http://user.dianler.com/web/activity/guoqing/image/box2_<?php echo $day2Status;?>.png?1=1" style="position:absolute;top:-80px;left:180px;width:167px;height:147px;"/>
+					<!--宝箱3-->
+					<img id="day3" onclick="connectToPhp(3);" src="http://user.dianler.com/web/activity/guoqing/image/box3_<?php echo $day3Status;?>.png?1=1" style="position:absolute;top:-80px;left:360px;width:167px;height:147px;"/>
+					<!--宝箱4-->
+					<img id="day4" onclick="connectToPhp(4);" src="http://user.dianler.com/web/activity/guoqing/image/box4_<?php echo $day4Status;?>.png?1=1" style="position:absolute;top:80px;left:360px;width:167px;height:147px;"/>
+					<!--宝箱5-->
+					<img id="day5" onclick="connectToPhp(5);" src="http://user.dianler.com/web/activity/guoqing/image/box5_<?php echo $day5Status;?>.png?1=1" style="position:absolute;top:240px;left:360px;width:167px;height:147px;"/>
+					<!--宝箱6-->
+					<img id="day6" onclick="connectToPhp(6);" src="http://user.dianler.com/web/activity/guoqing/image/box6_<?php echo $day6Status;?>.png?1=1" style="position:absolute;top:240px;left:180px;width:167px;height:147px;"/>
+					<!--宝箱7-->
+					<img id="day7" onclick="connectToPhp(7);" src="http://user.dianler.com/web/activity/guoqing/image/box7_<?php echo $day7Status;?>.png?1=1" style="position:absolute;top:240px;left:-20px;width:167px;height:147px;"/>
+					
+				
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/day1.png" style="position:absolute;top:75px;left:15px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/day2.png" style="position:absolute;top:75px;left:220px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/day3.png" style="position:absolute;top:75px;left:400px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/day4.png" style="position:absolute;top:225px;left:400px;"/>
+					
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/day5.png" style="position:absolute;top:385px;left:400px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/day6.png" style="position:absolute;top:385px;left:220px;"/>
+					<img  src="http://user.dianler.com/web/activity/guoqing/image/day7.png" style="position:absolute;top:385px;left:15px;"/>
+				</div>
+				
+			</div>
+			
+
+
+			
+
+			
+
+
+		</div>
+		
+		<div id="table_2" style="width:100%;height:820px;display:none;position:absolute;z-index:1;top:0px;left:0px;background-color:#400f07;">
+			<div style="clear:both;margin-bottom:120px;"></div>
+			<div style="width:80%;padding:10px;color:#ffbd80;font-size:32px;margin:0 auto;margin-top:10px;text-align:left;">
+				活动时间：10月1日-10月7日
+			</div>
+			
+			<div style="width:80%;padding:10px;color:#ffbd80;font-size:32px;margin:0 auto;margin-top:10px;text-align:left;">
+欢乐国庆欢乐颂！喜迎“十一”国庆节的到来，游戏为小伙伴准备了豪华大宝箱。活动七天内每天登录都可领取宝箱，累计登录几天对应领取第几天的宝箱奖励!
+				
+
+
+
+			</div>
+			
+			<div style="width:80%;padding:10px;color:#ffbd80;font-size:32px;margin:0 auto;margin-top:10px;text-align:left;">
+				连续登录7天领取终极大宝箱88888金+8个喇叭！
+			</div>
+			
+			<div style="width:80%;padding:10px;color:#ffbd80;font-size:32px;margin:0 auto;margin-top:10px;text-align:left;">
+				温馨提示：		
+			</div>
+			
+			<div style="width:80%;padding:10px;color:#ffbd80;font-size:32px;margin:0 auto;margin-top:10px;text-align:left;">
+				终极大宝箱需要连续登录7天才能得到哦！
+			</div>
+			<div style="width:80%;padding:10px;color:#ffbd80;font-size:32px;margin:0 auto;margin-top:10px;text-align:left;">
+				当日宝箱奖励需要开启宝箱才能获得，如不领取次日登录无法领取更高价值宝箱。
+			</div>
+			<div style="width:80%;padding:10px;color:#ffbd80;font-size:32px;margin:0 auto;margin-top:10px;text-align:left;">
+				同一个账号在三款产品内只能领取一次奖励！
+				
+
+			</div>
+			
+			<div style="width:80%;padding:10px;color:#ffbd80;font-size:32px;margin:0 auto;margin-top:10px;text-align:left;">
+				最终解释权归点乐游戏运营团队所有。
+			</div>
+		</div>
+		
+		<div id="table_3" style="width:100%;height:800px;display:none;position:absolute;z-index:1;top:0px;left:0px;background-color:#400f07;">
+			<div style="clear:both;margin-bottom:74px;"></div>
+			
+			<div style="width:98%;padding:10px;margin:0 auto;text-align:left;background-color:#541409;">
+				<div style="width:710px;margin:0 auto;height:70px;line-height:70px;color:#fff;">
+				<span style="font-size:32px;float:left;width:585px;">获取实物奖励的玩家请在此填写联系信箱</span>
+				<a   onclick="inputMessBox_open()" style="margin-top:10px;font-size:28px;float:right;width:118px;height:50px;text-align:center;line-height:50px;background:url('http://user.dianler.com/web/activity/guoqing/image/ddz_txxx.png') no-repeat;">
+					填写信息
+				</a>
+				<div style="clear:both;"></div>
+				</div>
+			</div>
+			<?php echo $historyS;?>
+		</div>
+</div>
+
+<!--消息框-->
+	
+			<!--错误消息-->
+			<div class ='child_div' id="mess0" style="display:none;">
+		
+
+				
+				<div style="width:556px;height:312px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:556px;height:312px;background:url(http://user.dianler.com/web/activity/image/sh_mBg.png);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-35px;left:510px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png?3=3); no-repeat;" onClick="message_close()" ></a>
+				
+					
+							<span  style='position:absolute;top:130px;left:145px;text-align:left; font-size:30px;color:#ffbd80;'>
+								您未达到领取条件！
+							</span>
+					
+	
+						</div>
+					</div>
+					
+				</div>
+			
+
+				
+			</div>
+			
+			<div class ='child_div' id="mess1" style="display:none;">
+		
+
+				
+				<div style="width:556px;height:312px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:556px;height:312px;background:url(http://user.dianler.com/web/activity/image/sh_mBg.png);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-35px;left:510px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png?3=3); no-repeat;" onClick="message_close()" ></a>
+					
+							<span style='position:absolute;top:70px;left:135px;font-size:40px;color:#ffbd80;'>恭喜您成功领取</span>
+							<div  style='position:absolute;top:170px;left:135px;font-size:40px;color:#ffbd80;'>
+								<img id="successImg" src="http://user.dianler.com/web/activity/guoqing/image/sh_xiaojinbi.png" style="float:left;width:44px;height:45px;margin-top:3px;"/>
+								<span id="success" style="float:left;margin-left:5px;"></span>
+								<div style="clear:both;"></div>
+							</div>
+
+						</div>
+					</div>
+					
+				</div>
+			
+
+				
+			</div>
+			
+			<div class ='child_div' id="mess3" style="display:none;">
+		
+				
+				<div style="width:556px;height:312px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:556px;height:312px;background:url(http://user.dianler.com/web/activity/image/sh_mBg.png);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-35px;left:510px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png?3=3); no-repeat;" onClick="message_close()" ></a>
+					
+							<span style='position:absolute;top:70px;left:195px;font-size:40px;color:#ffbd80;'>系统提示</span>
+							<div  style='position:absolute;top:150px;left:15px;font-size:40px;color:#ffbd80;'>
+								<!--<img src="http://user.dianler.com/web/activity/guoqing/image/sh_xiaojinbi.png" style="float:left;width:44px;height:45px;margin-top:3px;"/>-->
+								<span  style="float:left;">您暂未获得实物奖励，加油哦^_^！</span>
+								<div style="clear:both;"></div>
+							</div>
+
+						</div>
+					</div>
+					
+				</div>
+			
+
+				
+			</div>
+			
+			<!--信息填写框10-->
+			<div class='child_div' id="mess2" style="display:none;">
+
+				<div style="width:556px;height:312px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:556px;height:312px;background:url(http://user.dianler.com/web/activity/image/sh_mBg.png);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-120px;left:500px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png?3=3); no-repeat;" onClick="message_close()" ></a>
+				
+					
+							<span  style='position:absolute;top:50px;left:40px; font-weight:bold;font-size:24px;color:#ffff00;'>您的金币少于1000，不能继续使用金币抽奖。</span>
+					
+
+						</div>
+					</div>
+					
+				</div>
+				
+
+			</div>
+			
+			<!--错误消息2-->
+			<div class ='child_div' id="mess4" style="display:none;">
+		
+
+				
+				<div style="width:556px;height:312px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:556px;height:312px;background:url(http://user.dianler.com/web/activity/image/sh_mBg.png);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-35px;left:510px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png?3=3); no-repeat;" onClick="message_close()" ></a>
+				
+					
+							<span  style='position:absolute;top:130px;left:25px;text-align:left; font-size:30px;color:#ffbd80;'>
+								请选择锤子，锤子属性不同，奖品不同哦！
+							</span>
+					
+	
+						</div>
+					</div>
+					
+				</div>
+			
+
+				
+			</div>
+			
+			<div class ='child_div' id="mess5" style="display:none;">
+		
+
+				
+				<div style="width:556px;height:312px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:556px;height:312px;background:url(http://user.dianler.com/web/activity/image/sh_mBg.png);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-35px;left:510px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png?3=3); no-repeat;" onClick="message_close()" ></a>
+				
+					
+							<span  id="tips5" style='width:500px;position:absolute;top:130px;left:35px;text-align:left; font-size:30px;color:#ffbd80;'>
+								您未达到领取条件！
+							</span>
+					
+	
+						</div>
+					</div>
+					
+				</div>
+			
+
+				
+			</div>
+			
+			<!--信息填写框-->
+			<div class="child_div" id='inputMessBox'  style="left:35%;display:none;">
+
+				<div style="width:452px;height:452px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:646px;height:452px;background:url(http://user.dianler.com/web/activity/image/ddz_mBg1.png);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-38px;left:600px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png?3=3); no-repeat;" onClick="inputMessBox_close()" ></a>
+				
+					
+							<span  style='position:absolute;top:40px;left:240px; font-weight:bold;font-size:32px;color:#fff;'>填写领奖信息</span>
+					
+					
+							<div style="position:absolute;top:100px;left:90px;width:486px;height:63px;background:url(http://user.dianler.com/web/activity/image/inputBg.png) no-repeat;">
+								<input id = "mnice" type='text' value="填写您的姓名" style="font-size:28px;float:left;margin-left:10px;margin-top:10px;height:38px;width:460px;line-height:38px;color:#634743;background-color:#f8f8f8;z-index:999;border:none"/>
+							</div>
+							
+							<div style="position:absolute;top:190px;left:90px;width:486px;height:63px;background:url(http://user.dianler.com/web/activity/image/inputBg.png) no-repeat;">
+								<input id = "mnice" type='text' value="填写您的手机号(必填)" style="font-size:28px;float:left;margin-left:10px;margin-top:10px;height:38px;width:460px;line-height:38px;color:#634743;background-color:#f8f8f8;z-index:999;border:none"/>
+							</div>
+							
+							<div style="position:absolute;top:280px;left:90px;width:486px;height:63px;background:url(http://user.dianler.com/web/activity/image/inputBg.png) no-repeat;">
+								<input id = "mnice" type='text' value="填写您的详细地址" style="font-size:28px;float:left;margin-left:10px;margin-top:10px;height:38px;width:460px;line-height:38px;color:#634743;background-color:#f8f8f8;z-index:999;border:none"/>
+							</div>
+
+							<a href="#@" class='child_message_button1' style="left:240px;top:360px;" onClick="message_tab(3);" ></a>
+							
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			
+			
+			<!--领取信息框2-->
+			<div class ='child_div' id="mess10" style="display:none;">
+				
+				<div style="width:556px;height:312px;padding:0;margin:0;margin-top:-1px;">
+
+					<div style="width:556px;height:312px;background:url(http://user.dianler.com/web/activity/image/sh_mBg.png);">
+						<div style="position:relative;margin:0 auto;">
+							<a href="#@" style="position:absolute;text-decoration:none;top:-35px;left:510px;z-index:99;width:76px;height:77px;background:url(http://user.dianler.com/web/activity/image/close.png?3=3); no-repeat;" onClick="message_close()" ></a>
+					
+							<span style='position:absolute;top:50px;left:135px;font-size:40px;color:#ffbd80;'>恭喜您成功领取</span>
+							<div  style='position:absolute;top:130px;left:135px;font-size:40px;color:#ffbd80;'>
+								<img  src="http://user.dianler.com/web/activity/guoqing/image/sh_xiaojinbi.png" style="float:left;width:44px;height:45px;margin-top:3px;"/>
+								<span id="success2" style="float:left;margin-left:5px;"></span>
+								<div style="clear:both;"></div>
+							</div>
+							
+							<div  style='position:absolute;top:190px;left:135px;font-size:40px;color:#ffbd80;'>
+								<img  src="http://user.dianler.com/web/activity/guoqing/image/xiaolaba.png" style="float:left;width:44px;height:45px;margin-top:3px;"/>
+								<span id="successLaba" style="float:left;margin-left:5px;"></span>
+								<div style="clear:both;"></div>
+							</div>
+	
+						</div>
+					</div>
+					
+				</div>	
+			</div>
+			
+			
+			
+<script style="text/javascript">
+	function inputMessBox_open(){
+		document.getElementById("inputMessBox").style.display="block";
+	}
+	
+	function inputMessBox_close(){
+		document.getElementById("inputMessBox").style.display="none";
+	}
+	
+	var message_now = 1;
+	var paramStringJ = "<?php echo $paramString; ?>";
+	function message_tab(tab){
+		inputMessBox_close();
+		var temp = tab;
+		var m = document.getElementById("mess"+temp);
+		var n = document.getElementById("mess"+message_now);
+		n.style.display = 'none';
+		m.style.display = 'block';
+		message_now = temp;
+		
+	}
+	
+	function message_close(){
+		inputMessBox_close();
+		var n = document.getElementById("mess" + message_now); var n = document.getElementById("mess" + message_now);
+		n.style.display = 'none';
+	}
+	
+	var nowtableID = 1;
+	function changeTable(tableID){
+		inputMessBox_close();
+		document.getElementById("table_1").style.display = "none";
+		document.getElementById("table_2").style.display = "none";
+		document.getElementById("table_3").style.display = "none";
+		document.getElementById("table_"+tableID).style.display = "block";
+		
+		document.getElementById("changeButton_1").style.backgroundImage ="url(http://user.dianler.com/web/activity/guoqing/image/caidan_leave.png)" ;
+		document.getElementById("changeButton_2").style.backgroundImage ="url(http://user.dianler.com/web/activity/guoqing/image/caidan_leave.png)" ;
+		//document.getElementById("changeButton_3").style.backgroundImage ="url(http://user.dianler.com/web/activity/guoqing/image/caidan_leave.png)" ;
+		document.getElementById("changeButton_"+tableID).style.backgroundImage ="url(http://user.dianler.com/web/activity/guoqing/image/caidan_on.png)" ;
+		nowtableID = tableID;
+	}
+	function changeMouseover(tableID)
+	{
+		document.getElementById("changeButton_"+tableID).style.backgroundImage ="url(http://user.dianler.com/web/activity/guoqing/image/caidan_on.png)" ;
+	}
+	function changeMouseout(tableID)
+	{
+		if(tableID == nowtableID){
+			document.getElementById("changeButton_"+tableID).style.backgroundImage ="url(http://user.dianler.com/web/activity/guoqing/image/caidan_on.png)" ;
+		}else{
+			document.getElementById("changeButton_"+tableID).style.backgroundImage ="url(http://user.dianler.com/web/activity/guoqing/image/caidan_leave.png)" ;
+		}
+	}
+	
+	
+	var timeCuidan;
+	var timeDanSui;
+	var timeCuiziPiaodong;
+	
+	
+	var timeCui1;
+	var timeCui2;
+	var timeCui3;
+	var timeCui4;
+	var timeCui5;
+	var timeCui6;
+	var timeCui7;
+	
+	var frameCuis1 = 0;
+	var dirC1      = 0;
+	var frameCuis2 = 0;
+	var dirC2      = 0;
+	var frameCuis3 = 0;
+	var dirC3      = 0;
+	var frameCuis4 = 0;
+	var dirC4      = 0;
+	var frameCuis5 = 0;
+	var dirC5      = 0;
+	var frameCuis6 = 0;
+	var dirC6      = 0;
+	var frameCuis7 = 0;
+	var dirC7      = 0;
+	
+	var tCstatus = "<?php echo $tCstatus?>";
+	var yCstatus = "<?php echo $yCstatus?>";
+	var jCstatus = "<?php echo $jCstatus?>";
+	
+	var day1Status = "<?php echo $day1Status?>";
+	var day2Status = "<?php echo $day2Status?>";
+	var day3Status = "<?php echo $day3Status?>";
+	var day4Status = "<?php echo $day4Status?>";
+	var day5Status = "<?php echo $day5Status?>";
+	var day6Status = "<?php echo $day6Status?>";
+	var day7Status = "<?php echo $day7Status?>";
+	
+	
+	
+	var target1 = "<?php echo $target1?>";
+	var target2 = "<?php echo $target2?>";
+	var target3 = "<?php echo $target3?>";
+	function shansuo1(){
+		
+		if(dirC1==0){
+			frameCuis1++;
+		}else{
+			frameCuis1--;
+		}
+
+		if(frameCuis1==15){
+			dirC1 = 1;
+		}
+		
+		if(frameCuis1==0){
+			dirC1 = 0;
+		}
+		document.getElementById('day1').style.top = -80-frameCuis1+"px";
+	}
+	
+	function shansuo2(){
+		if(dirC2==0){
+			frameCuis2++;
+		}else{
+			frameCuis2--;
+		}
+
+		if(frameCuis2==15){
+			dirC2 = 1;
+		}
+		
+		if(frameCuis2==0){
+			dirC2 = 0;
+		}
+		document.getElementById('day2').style.top = -80-frameCuis2+"px";
+	}
+	
+	function shansuo3(){
+
+		if(dirC3==0){
+			frameCuis3++;
+		}else{
+			frameCuis3--;
+		}
+
+		if(frameCuis3==15){
+			dirC3 = 1;
+		}
+		
+		if(frameCuis3==0){
+			dirC3 = 0;
+		}
+		document.getElementById('day3').style.top = -80-frameCuis3+"px";
+		
+	}
+	
+	
+	function shansuo4(){
+
+		if(dirC4==0){
+			frameCuis4++;
+		}else{
+			frameCuis4--;
+		}
+
+		if(frameCuis4==15){
+			dirC4 = 1;
+		}
+		
+		if(frameCuis4==0){
+			dirC4 = 0;
+		}
+		document.getElementById('day4').style.top = 80-frameCuis4+"px";
+		
+	}
+	
+	function shansuo5(){
+
+		if(dirC5==0){
+			frameCuis5++;
+		}else{
+			frameCuis5--;
+		}
+
+		if(frameCuis5==15){
+			dirC5 = 1;
+		}
+		
+		if(frameCuis5==0){
+			dirC5 = 0;
+		}
+		document.getElementById('day5').style.top = 240-frameCuis5+"px";
+		
+	}
+	
+	function shansuo6(){
+
+		if(dirC6==0){
+			frameCuis6++;
+		}else{
+			frameCuis6--;
+		}
+
+		if(frameCuis6==15){
+			dirC6 = 1;
+		}
+		
+		if(frameCuis6==0){
+			dirC6 = 0;
+		}
+		document.getElementById('day6').style.top = 240-frameCuis6+"px";
+		
+
+	}
+	
+	function shansuo7(){
+
+		if(dirC7==0){
+			frameCuis7++;
+		}else{
+			frameCuis7--;
+		}
+
+		if(frameCuis7==15){
+			dirC7 = 1;
+		}
+		
+		if(frameCuis7==0){
+			dirC7 = 0;
+		}
+		document.getElementById('day7').style.top = 240-frameCuis7+"px";
+	}
+	 
+	
+	
+	
+	if(day1Status==1){
+		timeCui1 =setInterval("shansuo1()",50);
+	}
+	
+	//alert(day2Status);
+	if(day2Status==1){
+		timeCui2 =setInterval("shansuo2()",50);
+	}
+	
+	if(day3Status==1){
+		timeCui3 =setInterval("shansuo3()",50);
+	}
+	
+	if(day4Status==1){
+		timeCui4 =setInterval("shansuo4()",50);
+	}
+	
+	if(day5Status==1){
+		timeCui5 =setInterval("shansuo5()",50);
+	}
+	
+	if(day6Status==1){
+		timeCui6 =setInterval("shansuo6()",50);
+	}
+	
+	if(day7Status==1){
+		timeCui7 =setInterval("shansuo7()",50);
+	}
+	
+	var frameNum = 1;
+
+	function cuidan(caizhi)
+	{	
+
+		clearInterval(timeCuidan);
+		
+
+		
+		if(frameNum <5){
+			document.getElementById('donghuaCZ').style.display="block";
+			document.getElementById('donghuaCZ').src = "http://user.dianler.com/web/activity/guoqing/image/"+caizhi+"0"+frameNum+".png";
+			frameNum++;
+			timeCuidan = setInterval("cuidan('"+caizhi+"')",100);
+		}else{
+			//frameNum = 1;
+			//document.getElementById('donghuaCZ').src = "http://user.dianler.com/web/activity/guoqing/image/t0"+frameNum+".png";
+			//document.getElementById('donghuaCZ').style.display="none";
+			
+			if(caizhi=='t'){
+				document.getElementById("tt").innerHTML = "已使用";
+			}else if(caizhi=='y'){
+				document.getElementById("yt").innerHTML = "已使用";
+			}else if(caizhi=='j'){
+				document.getElementById("jt").innerHTML = "已使用";
+			}
+			
+			frameNum = 1;
+			timeDanSui = setInterval("dansui()",100);
+		}
+	}
+	
+	function cleanA(caizhi){
+		if(caizhi=='t'){
+			clearInterval(timeCui1);
+			document.getElementById('t').style.top = -30+"px";
+			document.getElementById('t').src = "http://user.dianler.com/web/activity/guoqing/image/cui_1_0.png";
+		}else if(caizhi=='y'){
+			clearInterval(timeCui2);
+			document.getElementById('y').style.top = -30+"px";
+			document.getElementById('y').src = "http://user.dianler.com/web/activity/guoqing/image/cui_2_0.png";
+		}else if(caizhi=='j'){
+			clearInterval(timeCui3);
+			document.getElementById('j').style.top = -30+"px";
+			document.getElementById('j').src = "http://user.dianler.com/web/activity/guoqing/image/cui_3_0.png";
+		}
+	}
+	
+	
+	var frameDanShuiNum = 0;
+	function dansui()
+	{	
+		clearInterval(timeDanSui);
+		document.getElementById('donghuaDS').src = "http://user.dianler.com/web/activity/guoqing/image/dan_0.png";
+		if(frameDanShuiNum <5){
+			document.getElementById('donghuaDS').src = "http://user.dianler.com/web/activity/guoqing/image/dan_"+frameDanShuiNum+".png";
+			frameDanShuiNum++;
+			timeDanSui = setInterval("dansui()",100);
+		}else{
+			
+			frameDanShuiNum = 0;
+			//document.getElementById('donghuaDS').src = "http://user.dianler.com/web/activity/guoqing/image/dan_"+frameDanShuiNum+".png";
+			
+			message_tab(1);
+		}
+	}
+	
+	
+	function connectToPhp(ctype){
+		//alert(1);
+		//tips5
+		
+		
+		if(ctype==1){
+			if(day1Status==0){
+				document.getElementById("tips5").innerHTML = "您还未获得该宝箱！每天登录领奖就可逐个开启宝箱啦！";
+				message_tab(5);
+				return;
+			}else if(day1Status==2){
+				document.getElementById("tips5").innerHTML = "您已经开启了这个宝箱,明天记得要来哦！";
+				message_tab(5);
+				return;
+			}
+		}else if(ctype==2){
+			if(day2Status==0){
+				document.getElementById("tips5").innerHTML = "您还未获得该宝箱！每天登录领奖就可逐个开启宝箱啦！";
+				message_tab(5);
+				return;
+			}else if(day2Status==2){
+				document.getElementById("tips5").innerHTML = "您已经开启了这个宝箱,明天记得要来哦！";
+				message_tab(5);
+				return;
+			}
+		}else if(ctype==3){
+			if(day3Status==0){
+				document.getElementById("tips5").innerHTML = "您还未获得该宝箱！每天登录领奖就可逐个开启宝箱啦！";
+				message_tab(5);
+				return;
+			}else if(day3Status==2){
+				document.getElementById("tips5").innerHTML = "您已经开启了这个宝箱,明天记得要来哦！";
+				message_tab(5);
+				return;
+			}
+		}else if(ctype==4){
+			if(day4Status==0){
+				document.getElementById("tips5").innerHTML = "您还未获得该宝箱！每天登录领奖就可逐个开启宝箱啦！";
+				message_tab(5);
+				return;
+			}else if(day4Status==2){
+				document.getElementById("tips5").innerHTML = "您已经开启了这个宝箱,明天记得要来哦！";
+				message_tab(5);
+				return;
+			}
+		}else if(ctype==5){
+			if(day5Status==0){
+				document.getElementById("tips5").innerHTML = "您还未获得该宝箱！每天登录领奖就可逐个开启宝箱啦！";
+				message_tab(5);
+				return;
+			}else if(day5Status==2){
+				document.getElementById("tips5").innerHTML = "您已经开启了这个宝箱,明天记得要来哦！";
+				message_tab(5);
+				return;
+			}
+		}else if(ctype==6){
+			if(day6Status==0){
+				document.getElementById("tips5").innerHTML = "您还未获得该宝箱！每天登录领奖就可逐个开启宝箱啦！";
+				message_tab(5);
+				return;
+			}else if(day6Status==2){
+				document.getElementById("tips5").innerHTML = "您已经开启了这个宝箱,明天记得要来哦！";
+				message_tab(5);
+				return;
+			}
+		}else if(ctype==7){
+			if(day7Status==0){
+				document.getElementById("tips5").innerHTML = "您还未获得该宝箱！每天登录领奖就可逐个开启宝箱啦！";
+				message_tab(5);
+				return;
+			}else if(day7Status==2){
+				document.getElementById("tips5").innerHTML = "您已经开启了这个宝箱,明天记得要来哦！";
+				message_tab(5);
+				return;
+			}
+		}
+		
+
+		//alert(2);
+	
+		var xmlhttp;
+		if(window.XMLHttpRequest){
+			try{
+				xmlhttp = new XMLHttpRequest();
+			}catch(e){
+				try{
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+				}catch(e){
+					try{
+						xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+					}catch(e){
+						xmlhttp = false;
+					}
+				}
+			}
+		}
+		
+		if(!xmlhttp){
+			alert('cannot create an XMLHTTP instance');
+		}
+	
+		xmlhttp.onreadystatechange=function(){
+			if (xmlhttp.readyState==4&& xmlhttp.status==200 ){
+
+				 var str = xmlhttp.responseText;
+                 
+				 if(str ==null|| str ==""){
+				    //message_tab(0);
+				    return;
+				 }else{
+				   //alert(str);
+
+				  
+				   var obj = eval('('+str+')');
+				 
+				   
+				   if(obj.flag == 0){
+					  num1 = 5;
+					  if(obj.messid == 1){
+						message_tab(2);
+					  }else if(obj.messid == 5){
+						document.getElementById("tips5").innerHTML = "您已经开启了这个宝箱,明天记得要来哦！";
+						message_tab(5);
+					  }else if(obj.messid == 4){
+						document.getElementById("tips5").innerHTML = "您还未获得该宝箱！每天登录领奖就可逐个开启宝箱啦！";
+						message_tab(5);
+					  }else{
+						message_tab(0);
+					  }		
+					  return;
+					}else{		
+					  var processString = "";
+					  if(ctype==1){
+						clearInterval(timeCui1);
+						document.getElementById("day1").src = "http://user.dianler.com/web/activity/guoqing/image/box1_2.png";
+						document.getElementById('day1').style.top = -80+"px";
+						
+						processString = "<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:20px;width:188px;height:21px;'/>";
+					  }else if(ctype==2){
+						clearInterval(timeCui2);
+						document.getElementById("day2").src = "http://user.dianler.com/web/activity/guoqing/image/box2_2.png";
+						document.getElementById('day2').style.top = -80+"px";
+						
+						processString = "<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:20px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:250px;width:188px;height:21px;'/>";
+				
+					  }else if(ctype==3){
+						clearInterval(timeCui3);
+						document.getElementById("day3").src = "http://user.dianler.com/web/activity/guoqing/image/box3_2.png";
+						document.getElementById('day3').style.top = -80+"px";
+						
+						processString = "<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:20px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:250px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process2.png' style='position:absolute;top:35px;left:425px;width:21px;height:144px;'/>";
+					  }else if(ctype==4){
+						clearInterval(timeCui4);
+						document.getElementById("day4").src = "http://user.dianler.com/web/activity/guoqing/image/box4_2.png";
+						document.getElementById('day4').style.top = 80+"px";
+		              
+						processString = "<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:20px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:250px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process2.png' style='position:absolute;top:35px;left:425px;width:21px;height:144px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process2.png' style='position:absolute;top:165px;left:425px;width:21px;height:144px;'/>";
+					  }else if(ctype==5){
+						clearInterval(timeCui5);
+						document.getElementById("day5").src = "http://user.dianler.com/web/activity/guoqing/image/box5_2.png";
+						document.getElementById('day5').style.top = 240+"px";
+						
+						processString = "<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:20px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:250px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process2.png' style='position:absolute;top:35px;left:425px;width:21px;height:144px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process2.png' style='position:absolute;top:165px;left:425px;width:21px;height:144px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:320px;left:250px;width:188px;height:21px;'/>";
+					  }else if(ctype==6){
+						clearInterval(timeCui6);
+						document.getElementById("day6").src = "http://user.dianler.com/web/activity/guoqing/image/box6_2.png";
+						document.getElementById('day6').style.top = 240+"px";
+						
+						processString = "<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:20px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:250px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process2.png' style='position:absolute;top:35px;left:425px;width:21px;height:144px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process2.png' style='position:absolute;top:165px;left:425px;width:21px;height:144px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:320px;left:250px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:320px;left:20px;width:188px;height:21px;'/>";
+					  }else if(ctype==7){
+						clearInterval(timeCui7);
+						document.getElementById("day7").src = "http://user.dianler.com/web/activity/guoqing/image/box7_2.png";
+						document.getElementById('day7').style.top = 240+"px";
+						
+						processString = "<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:20px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:5px;left:250px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process2.png' style='position:absolute;top:35px;left:425px;width:21px;height:144px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process2.png' style='position:absolute;top:165px;left:425px;width:21px;height:144px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:320px;left:250px;width:188px;height:21px;'/>";
+						processString = processString+"<img  src='http://user.dianler.com/web/activity/guoqing/image/process1.png' style='position:absolute;top:320px;left:20px;width:188px;height:21px;'/>";
+					  
+					  }
+					  
+					  document.getElementById("process").innerHTML = processString;
+					  
+					  if(obj.laba>0){
+						document.getElementById("success2").innerHTML = obj.money;
+						document.getElementById("successLaba").innerHTML = obj.laba;
+						message_tab(10);
+					  }else{
+						document.getElementById("success").innerHTML = obj.money;
+						message_tab(1);
+					  }
+					  return;
+					}
+				   
+				 }
+			}
+		};
+    
+		//根据message_now的值来判断
+    
+		//var require_jifen = 500;
+		//var money = 0;
+		//var telphone = document.getElementById('telphone').value;
+		var url = 'http://user.dianler.com/index.php?m=activity&p=dispath&fpath=guoqing&action=startYo&buttonctype='+ctype+paramStringJ;
+		//alert(url);
+		//alert(mid);
+		xmlhttp.open("GET", url, true);
+		xmlhttp.setRequestHeader("Content-Type","text/plain");
+		xmlhttp.send();
+	
+	}
+	
+	function showTips(){
+		message_tab(4);
+	}
+	
+	//message_tab(10);
+</script>
+</body>
+</html>

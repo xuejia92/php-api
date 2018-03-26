@@ -1,0 +1,40 @@
+<?php !defined('IN WEB') AND exit('Access Denied!');
+class Config_Table{	
+	public $userinfo             = 'ucenter.uc_userinfo';
+    public $gameinfo             = 'ucenter.uc_gameinfo';
+    public $sitemid2mid          = 'ucenter.uc_sitemid2mid';
+    public $android_register     = 'ucenter.uc_register_android';
+    public $ios_register         = 'ucenter.uc_register_ios';
+    public $username_register    = 'ucenter.uc_register_username';
+    public $phonenumber_register = 'ucenter.uc_register_phonenumber';
+    public $register_sitemid     = 'ucenter.uc_register_sitemid';
+    public $account_binding  	 = 'ucenter.uc_account_binding';
+    public $feedback         	 = 'ucenter.uc_feedback';	
+	public $feedback_reply   	 = 'ucenter.uc_feedback_reply';	
+	public $message_logs     	 = 'ucenter.uc_logmessage';	
+	public $settingsid       	 = 'ucenter.uc_setting_sid';
+    public $settingcid       	 = 'ucenter.uc_setting_cid';
+    public $settingpid       	 = 'ucenter.uc_setting_pid';
+    public $notice           	 = 'ucenter.uc_notice';
+    public $versions         	 = 'ucenter.uc_versions';
+    public $statsum          	 = 'stat.stat_sum';
+    public $setting_pmode    	 = 'ucenter.uc_setting_pmode';
+	public $paymentid        	 = 'ucenter.uc_paymentid';
+	public $payment          	 = 'ucenter.uc_payment';
+	public $logmember        	 = 'logchip.log_member';
+	public $logfish        	     = 'logchip.log_member_fish';
+	public $logroll          	 = 'logchip.log_roll';
+	public $logbank          	 = 'logchip.log_bank';
+	public $logronline       	 = 'stat.stat_logonline';
+	public $winlog           	 = 'logchip.log_win'; 
+	public $wmode                = 'ucenter.uc_setting_wmode';
+	public $antiaddiction        = 'ucenter.uc_antiaddiction';
+	public $pushconfig           = 'ucenter.uc_setting_push';
+	public $match_prize          = 'ucenter.uc_match_prize';
+	public $logactive        	 = 'logchip.log_active';
+	public $logregister        	 = 'logchip.log_register';
+	public $logcalregister       = 'logchip.log_calregister';
+	public $logbataccount        = 'ucenter.uc_logbataccount';
+
+	public $wx_register    = 'ucenter.uc_register_wx';
+}

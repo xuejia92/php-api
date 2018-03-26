@@ -1,0 +1,121 @@
+@CHARSET "UTF-8";
+
+#dialog{ width:760px; }
+
+.qz_dialog_layer_main {
+    background-color: #FFFFFF;
+    border: 1px solid #6B97C1;
+    position: relative;
+}
+.qz_dialog_layer_title {
+    background: url("../image/pupop_bg.png") repeat-x scroll 0 0 #8BACCF;
+    height: 28px;
+}
+.qz_dialog_layer_title h3 {
+    color: #FFFFFF;
+    float: left;
+    font-size: 13px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0;
+    overflow: hidden;
+    text-indent: 8px;
+}
+.qz_dialog_layer_title .qz_dialog_btn_close {
+    background: url("../image/pupop_bg.png") no-repeat scroll 0 -30px transparent;
+    border: 0 none;
+    cursor: pointer;
+    float: right;
+    font-size: 0;
+    height: 19px;
+    line-height: 100px;
+    margin-right: 5px;
+    width: 34px;
+}
+.qz_dialog_layer_title .qz_dialog_btn_close:hover {
+    background: url("../image/pupop_bg.png") no-repeat scroll -37px -30px transparent;
+}
+.qz_dialog_layer_cont {
+    background-color: #FFFFFF;
+    color: #5F5F5F;
+}
+.qz_dialog_layer_cont a:link, .qz_dialog_layer_cont a:visited {
+    color: #5181B4;
+    text-decoration: none;
+}
+.qz_dialog_layer_cont a:hover {
+    color: #494949;
+    text-decoration: underline;
+}
+.qz_dialog_btn_bpadding {
+    padding-bottom: 40px;
+}
+.qz_dialog_layer_ft {
+    background: none repeat scroll 0 0 #F3F3F3;
+    border-top: 1px solid #E0E0E0;
+    bottom: 0;
+    clear: both;
+    height: 34px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.qz_dialog_layer_other {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 0 0 6px;
+}
+.qz_dialog_layer_op {
+    float: right;
+    padding: 6px 6px 0 0;
+    text-align: right;
+}
+.qz_dialog_layer_btn {
+    display: inline-block;
+    height: 19px;
+    margin-left: 3px;
+    padding: 1px 0 0 1px;
+}
+.qz_dialog_layer_btn span {
+    display: inline-block;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    height: 19px;
+    line-height: 18px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 13px 0 12px;
+    text-align: center;
+}
+a.qz_dialog_layer_btn:hover {
+    text-decoration: none;
+}
+a.qz_dialog_layer_sub {
+    background: -moz-linear-gradient(center top , #ECF4FC, #D6E4F2) repeat scroll 0 0 transparent;
+    border: 1px solid #CCD4DC;
+}
+a.qz_dialog_layer_sub span {
+    background: -moz-linear-gradient(center top , #DAE9F9, #B0CBE6) repeat scroll 0 0 transparent;
+    color: #4D637F;
+}
+a.qz_dialog_layer_nor {
+    background: none repeat scroll 0 0 #FDFDFD;
+    border: 1px solid #CCD4DC;
+}
+a.qz_dialog_layer_nor span {
+    background: -moz-linear-gradient(center top , #FDFDFD, #E5E6E8) repeat scroll 0 0 transparent;
+    color: #4D637F;
+}
+a.qz_dialog_layer_sub:hover span, a.qz_dialog_layer_nor:hover span {
+    background: -moz-linear-gradient(center top , #E9F2FB, #CBDDF0) repeat scroll 0 0 transparent;
+}
+.qz_dialog_layer_disabled {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CBCBCB;
+}
+.qz_dialog_layer_disabled span {
+    background: none repeat scroll 0 0 #F3F3F3;
+    color: #BBBBBB;
+    display: inline-block;
+}

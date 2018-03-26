@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no"/>
+<title>赢牌换宝</title>
+
+<style>
+body, input, textarea, select, button {
+	font: 12px/1.42 "Microsoft YaHei", Tahoma, Arial, Helvetica, Geneva, sans-serif;
+	color: #000;
+}
+
+html, body	{ 
+	-webkit-text-size-adjust: none;
+	user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, div, header, footer, nav, section, article, aside, figure, summary, small	{
+	margin: 0; padding: 0
+}
+
+body	{
+	background:#130D0F;
+}
+
+a, button, li, ul, img	{
+	text-decoration: none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.left	{
+	text-align:left
+}
+
+.center	{
+	text-align:center
+}
+
+.right	{
+	text-align:right
+}
+
+.float-left	{
+	float:left
+}
+
+.float-right	{
+	float:right
+}
+
+.clear	{
+	clear:both
+}
+
+.cl:after, .cl:before {
+	content:"";
+	clear: both;
+	display: table
+}
+
+.position-relative	{
+	position:relative
+}
+
+.position-absolute	{
+	position:absolute
+}
+
+.position-fix	{
+	position:fixed
+}
+
+.title_head	{
+	text-align: center;
+	background:url(http://user.dianler.com/web/activity/image/showhand/head.png) repeat-x;;
+	padding: 0.9% 0;
+}
+
+.title_head	img	{
+	width: 23%;
+}
+
+.bg	{
+	width: 100%;
+	height: 100%;
+	background:url(http://user.dianler.com/web/activity/image/showhand/background.jpg) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+}
+
+.item	{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	border-bottom:solid #5d4437 0.1em;
+	color: #ffbd80;
+	padding: 2% 0;
+}
+
+.item .block	{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.item a	{
+	color: #ffbd80;
+}
+
+.item .item_icon	{
+	width: 11%;
+}
+
+.item .item_icon .icon{
+	width: 90%;
+}
+
+.item .new_sign	{
+	width: 31%;
+	left: -9%;
+	top: -10%;
+}
+
+.item_info	{
+	text-align: left;
+	width: 57%;	
+}
+
+.item_info .i_header	{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.item_info .i_content	{
+	font-size: 1em;
+}
+
+.item_info .i_time	{
+	font-size: 1em;
+}
+
+.item_button	{
+	width: 15%;
+}
+
+.item_button a	{
+	background:url(http://user.dianler.com/web/activity/image/showhand/listButton.png);
+	font-size: 1.1em;
+	padding: 8% 0;
+	background-size: 100% 100%;
+	display: block;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+function textFit() {
+	var settings = {
+			maximum: 9999,
+			minimum: 1,
+			maxFont: 28,
+			minFont: 12,
+			fontRatio: 40,
+			lineRatio: 1.45
+		},
+		changes = function(el) {
+			var $el = document.body,
+				elw = $el.clientWidth,
+				width = elw > settings.maximum ? settings.maximum : elw < settings.minimum ? settings.minimum : elw,
+				fontBase = width / settings.fontRatio,
+				fontSize = fontBase > settings.maxFont ? settings.maxFont : fontBase < settings.minFont ? settings.minFont : fontBase;
+
+			$el.style.fontSize = fontSize + 'px';
+			$el.style.lineHeight = fontSize * settings.lineRatio + 'px';
+		};
+		return changes();
+}
+textFit();
+</script>
+	<div class="title_head">
+		<img src="http://user.dianler.com/web/activity/image/showhand/title.png"/>
+	</div>
+	<div class="bg"></div>
+	<div class="content">
+		<?php foreach($showAty as $key=>$value):?>
+			<div class="item" onclick="window.location.href='<?php echo ($value[url]).$paramString;?>'">
+				<div class="block item_icon position-relative">
+					<?php if($value['new']): ?>
+						<img class="position-absolute new_sign" src="web/activity/image/hd_new.png"/>
+					<?php endif; ?>
+					<img class="icon" src="<?php echo $value['image'];?>"/>
+				</div>
+				<div class="block item_info">
+					<p class="content i_header" ><?php echo $value['subject'];?></p>
+					<p class="content i_content" ><?php echo $value['desc'] ?></p>
+					<p class="content i_time" >活动时间:<?php echo $value['time'];?></p>
+				</div>
+				<div class="block item_button">
+					<a href="<?php echo ($value['url']).$paramString;?>" >
+						<?php echo $value['buttonName'] ?>
+					</a>
+				</div>
+			</div>
+		<?php endforeach;?>
+	</div>
+</body>
+</html>

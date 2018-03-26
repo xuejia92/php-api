@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Cache" content="no-cache">
+
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone = no">
+<title></title>
+<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+<style type="text/css">
+
+html {
+    font-size: 62.5%;
+    font-family: MHei,STHeitiTC-Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.clear:before,.clear:after {
+    content: '';
+    clear: both;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url(image/bg.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+#main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#title img {
+	width: 95%;
+	margin: 0 auto;
+}
+
+#content {
+	position: absolute;
+	left: 0;
+	top: 23%;
+	top: 13vw;
+	right: 0;
+	margin: auto;
+	width: 80%;
+	width: 80vw;
+	height: 76%;
+	overflow: auto;
+	display: none;
+}
+
+#content ul {
+	width: 100%;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#content li {
+	background: url(image/listbg.png?v=1) no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 6.25rem;
+	height: 10.2vw;
+	margin-bottom: 0.5vw;
+}
+
+#content li img {
+	width: 6rem;
+	width: 11vw;
+	left: 0.3rem;
+	left: 0.5vw;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#content .info {
+	width: 30rem;
+	width: 49vw;
+	height: 3.6rem;
+	height: 7vw;
+	text-align: left;
+	color: #fffd2f;
+	left: 7rem;
+	left: 12vw;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#content .info p {
+	margin: 0;
+	font-size: 1.5rem;
+	font-size: 2.5vw;
+	line-height: 1.7rem;
+	line-height: 3.5vw;
+}
+
+#content .info span {
+	font-size: 1.8rem;
+	font-size: 3vw;
+}
+
+#content ul li a {
+	background: url(image/button.png) no-repeat;
+	background-size: contain;
+	width: 9rem;
+	width: 16vw;
+	height: 2.8rem;
+	height: 5vw;
+	line-height: 3rem;
+	line-height: 5vw;
+	display: block;
+	top: 0;
+	right: 1rem;
+	right: 3vw;
+	bottom: 0;	
+	margin: auto;
+	color: #ffffff;
+	font-size: 1.8rem;
+	font-size: 3vw;
+}
+
+</style>
+</head>
+<body>
+    <div id="background"></div>
+    <div id="main">
+        <div style="width: 50%; width: 50vw; margin: auto;">
+            <div id="title">
+                <img src="./image/title.png">
+            </div>
+            <div id="content" style="display: block;">
+                <ul>
+                                        <li class="relative">
+                        <img class="absolute" src="./image/5000.png">
+                        <div class="info absolute">
+                            <p><span>14490000金币</span></p>
+                            <p>原价9990000金币，加赠4500000金币</p>
+                        </div>
+                        <a class="absolute" href="javascript:;">¥999</a>
+                    </li>
+                                        <li class="relative">
+                        <img class="absolute" src="./image/58.png">
+                        <div class="info absolute">
+                            <p><span>710000金币</span></p>
+                            <p>原价580000金币，加赠130000金币</p>
+                        </div>
+                        <a class="absolute" href="javascript:;">¥58</a>
+                    </li>
+                                        <li class="relative">
+                        <img class="absolute" src="./image/10.png">
+                        <div class="info absolute">
+                            <p><span>120000金币</span></p>
+                            <p>原价100000金币，加赠20000金币</p>
+                        </div>
+                        <a class="absolute" href="javascript:;">¥10</a>
+                    </li>
+                                        <li class="relative">
+                        <img class="absolute" src="./image/168.png">
+                        <div class="info absolute">
+                            <p><span>2100000金币</span></p>
+                            <p>原价1680000金币，加赠420000金币</p>
+                        </div>
+                        <a class="absolute" href="javascript:;">¥168</a>
+                    </li>
+                                        <li class="relative">
+                        <img class="absolute" src="./image/268.png">
+                        <div class="info absolute">
+                            <p><span>3480000金币</span></p>
+                            <p>原价2680000金币，加赠800000金币</p>
+                        </div>
+                        <a class="absolute" href="javascript:;">¥268</a>
+                    </li>
+                                        <li class="relative">
+                        <img class="absolute" src="./image/488.png">
+                        <div class="info absolute">
+                            <p><span>6580000金币</span></p>
+                            <p>原价4880000金币，加赠1700000金币</p>
+                        </div>
+                        <a class="absolute" href="javascript:;">¥488</a>
+                    </li>
+                                    </ul>            
+            </div>       
+        </div>
+   	</div>
+
+<script type="text/javascript">
+$(this).ready(function(){
+	setTimeout(function(){
+            $("#content").show();
+ 	   },100
+	)
+})
+</script>
+
+</body></html>
